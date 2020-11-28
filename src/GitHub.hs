@@ -37,9 +37,11 @@ data RepoContributor =
                   , contributions :: Integer
                   } deriving (Generic, FromJSON, Show)
 
-type GitHubAPI = "users" :> Header  "user-agent" UserAgent
-                         :> BasicAuth "github" Int 
-                         :> Capture "username" Username  :> Get '[JSON] GitHubUser
+data 
+
+type GitHubAPI = "users"  :> Header  "user-agent" UserAgent
+                          :> BasicAuth "github" Int 
+                          :> Capture "username" Username  :> Get '[JSON] GitHubUser
                          
             :<|> "users" :> Header  "user-agent" UserAgent
                          :> BasicAuth "github" Int 
@@ -58,3 +60,4 @@ getUserRepos ::     Maybe UserAgent -> BasicAuthData -> Username            -> C
 getRepoContribs ::  Maybe UserAgent -> BasicAuthData -> Username -> Reponame -> ClientM [RepoContributor]
   
 getUser :<|> getUserRepos :<|> getRepoContribs = client gitHubAPI
+
