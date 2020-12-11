@@ -64,6 +64,7 @@ getUser ::          Maybe UserAgent -> BasicAuthData -> Username            -> C
 getUserRepos ::     Maybe UserAgent -> BasicAuthData -> Username            -> ClientM [GitHubRepo]
 getRepoContribs ::  Maybe UserAgent -> BasicAuthData -> Username -> Reponame -> ClientM [RepoContributor]
 
+getMickeyMouse ::   Maybe UserAgent -> BasicAuthData -> Username -> Reponame -> ClientM [RepoContributor] 
 
-getUser :<|> getUserRepos :<|> getRepoContribs = client gitHubAPI
+getUser :<|> getUserRepos :<|> getRepoContribs :<|> getMickeyMouse = client gitHubAPI
 

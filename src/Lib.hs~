@@ -67,7 +67,7 @@ neimhin'sFunc = do
           Right result -> do
             putStrLn $ "hooray\n" ++ show result 
 
-  where env :: IO SC.ClientEnv
+ where env :: IO SC.ClientEnv
         env = do 
             manager <- newManager tlsManagerSettings
             return $ SC.mkClientEnv manager (SC.BaseUrl SC.Http "api.github.com" 80 "")
