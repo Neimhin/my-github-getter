@@ -65,7 +65,7 @@ neimhin'sFunc = do
     Right result -> do
       putStrLn $ "hooray\n" ++ show result 
 
-  (SC.runClientM (GH.getIssues (Just "haskell-app") auth) =<< env) 
+  (SC.runClientM (GH.getUserIssues (Just "haskell-app") auth) =<< env) 
    >>= \case
     Left err -> do
       putStrLn $ "\n\nError while trying GH.getUserIssues " ++ show err ++ "\n\n"
