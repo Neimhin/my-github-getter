@@ -43,6 +43,10 @@ neimhin'sFunc = do
   (authenticationName:_) <- getArgs
   -- token has been imported from Token.hs
   let auth = BasicAuthData (fromString authenticationName) (fromString token) 
+  getHighestContributorToCatch2 auth
+  
+
+getHighestContributorToCatch2 auth = do 
   manager' <- newManager tlsManagerSettings
   let environment = do return $ SC.mkClientEnv manager' (SC.BaseUrl SC.Http "api.github.com" 80 "")
   let getRepoContribsResult = environment >>= (SC.runClientM (GH.getRepoContribs (Just "haskell-app") auth (pack "Neimhin") (pack "Catch2")))
@@ -52,20 +56,22 @@ neimhin'sFunc = do
                        Nothing -> putStrLn "No contributors found"
                        Just highest -> putStrLn $ "The highest contributor was: " ++ show highest
 
-  (SC.runClientM (GH.getUser (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
+getNeimhin auth = (SC.runClientM (GH.getUser (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
             >>= \case
                Left err -> do
                     putStrLn $ "Error while trying GH.getUser" ++ show err
                Right result -> do
                     putStrLn $ show result
-  (SC.runClientM (GH.getUserRepos (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
+  
+getNeimhin'sRepos auth = (SC.runClientM (GH.getUserRepos (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
    >>= \case
     Left err -> do
       putStrLn $ "Error while trying GH.getUserRepos " ++ show err
     Right result -> do
       putStrLn $ "hooray\n" ++ show result 
 
-  (SC.runClientM (GH.getUserIssues (Just "haskell-app") auth) =<< env) 
+
+getAuthenticatedUser'sIssues auth = (SC.runClientM (GH.getUserIssues (Just "haskell-app") auth) =<< env) 
    >>= \case
     Left err -> do
       putStrLn $ "\n\nError while trying GH.getUserIssues " ++ show err ++ "\n\n"
@@ -73,14 +79,15 @@ neimhin'sFunc = do
       putStrLn $ "\n\nhooray, here are the authenticated user's Issues\n\n" ++ show result 
 
 
-  (SC.runClientM (GH.getIssues (Just "haskell-app") auth (pack "catchorg") (pack "Catch2")) =<< env) 
+getCatch2Issues auth = (SC.runClientM (GH.getIssues (Just "haskell-app") auth (pack "catchorg") (pack "Catch2")) =<< env) 
    >>= \case
     Left err -> do
       putStrLn $ "\n\nError while trying GH.getIssues " ++ show err ++ "\n\n"
     Right result -> do
       putStrLn $ "\n\nhooray, here are Neimhin's Issues on Catch2\n" ++ show result 
+ 
 
-  env >>= runGetRepoContribs "haskell-app" auth "Neimhin" "Catch2"
+getRepoContribs' auth =  env >>= runGetRepoContribs "haskell-app" auth "Neimhin" "Catch2"
       >>= \x -> case x of
        Left err -> do
          putStrLn $ "Error while trying GH.getUserRepos " ++ show err

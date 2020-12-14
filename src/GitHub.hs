@@ -81,9 +81,9 @@ getUser ::          Maybe UserAgent -> BasicAuthData -> Username            -> C
 getUserRepos ::     Maybe UserAgent -> BasicAuthData -> Username            -> ClientM [GitHubRepo]
 getRepoContribs ::  Maybe UserAgent -> BasicAuthData -> Username -> Reponame -> ClientM [RepoContributor]
 getIssues ::        Maybe UserAgent -> BasicAuthData -> Owner -> Reponame -> ClientM GitHubIssue
-getUserIssues ::    Maybe USerAgent -> BasicAuthData -> ClientM [GitHubIssue]
+getUserIssues ::    Maybe UserAgent -> BasicAuthData -> ClientM [GitHubIssue]
 
 
 -- Build the functions
-getUser :<|> getUserRepos :<|> getRepoContribs :<|> getIssues = client gitHubAPI
+getUser :<|> getUserRepos :<|> getRepoContribs :<|> getIssues :<|> getUserIssues = client gitHubAPI
 
