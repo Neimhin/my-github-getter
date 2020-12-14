@@ -65,6 +65,13 @@ neimhin'sFunc = do
     Right result -> do
       putStrLn $ "hooray\n" ++ show result 
 
+  (SC.runClientM (GH.getIssues (Just "haskell-app") auth (pack "catchorg") (pack "Catch2")) =<< env) 
+   >>= \case
+    Left err -> do
+      putStrLn $ "\n\nError while trying GH.getIssues " ++ show err ++ "\n\n"
+    Right result -> do
+      putStrLn $ "\n\nhooray, here are Neimhin's Issues on Catch2\n" ++ show result 
+
   env >>= runGetRepoContribs "haskell-app" auth "Neimhin" "Catch2"
       >>= \x -> case x of
        Left err -> do

@@ -20,6 +20,7 @@ type Username  = Text
 type UserAgent = Text
 type Reponame  = Text
 type Userlogin = Text
+type Owner = Text
 
 
 data GitHubUser =
@@ -43,6 +44,11 @@ data Login =
   Login { login :: Text }
         deriving (Generic, FromJSON, Show)
 
+data GitHubIssue =
+  GutHubIssue { title :: Text,
+           body  :: Text }
+        deriving (Generic, FromJSON, Show)
+
 
 type GitHubAPI = "users" :> Header  "user-agent" UserAgent
                          :> BasicAuth "github" Int 
@@ -56,6 +62,13 @@ type GitHubAPI = "users" :> Header  "user-agent" UserAgent
                          :> BasicAuth "github" Int 
                          :> Capture "username" Username  
                          :> Capture "repo"     Reponame  :> "contributors" :>  Get '[JSON] [RepoContributor]
+            
+            :<|> "repos" :> Header "user-agent" UserAgent
+                         :> BasicAuth "github" Int
+                         :> Capture "owner" Owner
+                         :> Capture "repo" Reponame
+                         :> "issues"
+                         :> Get '[JSON] GitHubIssue
 
 gitHubAPI :: Proxy GitHubAPI
 gitHubAPI = Proxy
@@ -63,7 +76,7 @@ gitHubAPI = Proxy
 getUser ::          Maybe UserAgent -> BasicAuthData -> Username            -> ClientM GitHubUser
 getUserRepos ::     Maybe UserAgent -> BasicAuthData -> Username            -> ClientM [GitHubRepo]
 getRepoContribs ::  Maybe UserAgent -> BasicAuthData -> Username -> Reponame -> ClientM [RepoContributor]
+getIssues ::        Maybe UserAgent -> BasicAuthData -> Owner -> Reponame -> ClientM GitHubIssue
 
-
-getUser :<|> getUserRepos :<|> getRepoContribs = client gitHubAPI
+getUser :<|> getUserRepos :<|> getRepoContribs :<|> getIssues = client gitHubAPI
 

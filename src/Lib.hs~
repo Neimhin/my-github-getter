@@ -48,9 +48,9 @@ neimhin'sFunc = do
   let getRepoContribsResult = environment >>= (SC.runClientM (GH.getRepoContribs (Just "haskell-app") auth (pack "Neimhin") (pack "Catch2")))
   getRepoContribsResult >>= \case 
      Left err -> do putStrLn $ "Goofs on getRepoContribs: " ++ show err
-     Right result -> (case (getHighest result) of 
+     Right result -> case (getHighest result) of 
                        Nothing -> putStrLn "No contributors found"
-                       Just highest -> putStrLn $ "The highest contributor was: " ++ show highest)
+                       Just highest -> putStrLn $ "The highest contributor was: " ++ show highest
 
   (SC.runClientM (GH.getUser (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
             >>= \case
@@ -64,6 +64,13 @@ neimhin'sFunc = do
       putStrLn $ "Error while trying GH.getUserRepos " ++ show err
     Right result -> do
       putStrLn $ "hooray\n" ++ show result 
+
+  (SC.runClientM (GH.getIssues (Just "haskell-app") auth (pack "snoyberg") (pack "Catch2")) =<< env) 
+   >>= \case
+    Left err -> do
+      putStrLn $ "\n\nError while trying GH.getIssues " ++ show err ++ "\n\n"
+    Right result -> do
+      putStrLn $ "\n\nhooray, here are Neimhin's Issues on Catch2\n" ++ show result 
 
   env >>= runGetRepoContribs "haskell-app" auth "Neimhin" "Catch2"
       >>= \x -> case x of
