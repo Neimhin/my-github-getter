@@ -50,25 +50,33 @@ data GitHubIssue =
         deriving (Generic, FromJSON, Show)
 
 
-type GitHubAPI = "users" :> Header  "user-agent" UserAgent
-                         :> BasicAuth "github" Int 
-                         :> Capture "username" Username  :> Get '[JSON] GitHubUser
-                         
-            :<|> "users" :> Header  "user-agent" UserAgent
-                         :> BasicAuth "github" Int 
-                         :> Capture "username" Username  :> "repos" :>  Get '[JSON] [GitHubRepo]
-                         
-            :<|> "repos" :> Header  "user-agent" UserAgent
-                         :> BasicAuth "github" Int 
-                         :> Capture "username" Username  
-                         :> Capture "repo"     Reponame  :> "contributors" :>  Get '[JSON] [RepoContributor]
+type GitHubAPI = 
+            -- GET /users/:username
+                 Header  "user-agent" UserAgent
+              :> BasicAuth "github" Int 
+              :> "users" :> Capture "username" Username  
+              :> Get '[JSON] GitHubUser
+              
+            -- GET /users/:username/repo             
+            :<|> Header  "user-agent" UserAgent
+              :> BasicAuth "github" Int 
+              :> "users" :> Capture "username" Username  :> "repos" 
+              :> Get '[JSON] [GitHubRepo]
             
-            :<|> "repos" :> Header "user-agent" UserAgent
-                         :> BasicAuth "github" Int
-                         :> Capture "owner" Owner
-                         :> Capture "repo" Reponame
-                         :> "issues"
-                         :> Get '[JSON] GitHubIssue
+            -- GET /repos/:username/:repo/contributors             
+            :<|> Header  "user-agent" UserAgent
+              :> BasicAuth "github" Int 
+              :> "repos" :> Capture "username" Username :> Capture "repo" Reponame :> "contributors" 
+              :>  Get '[JSON] [RepoContributor]
+            
+            -- GET /repos/:owner/:repo/issues            
+            :<|> Header "user-agent" UserAgent
+              :> BasicAuth "github" Int
+              :> "repos" :> Capture "owner" Owner :> Capture "repo" Reponame :> "issues"
+              :> Get '[JSON] GitHubIssue
+
+            -- GET /user/issues
+            -- (get issues assigned to the authenticated user)
             :<|> Header "user-agent" UserAgent
               :> BasicAuth "github" Int
               :> "user" :> "issues" 
