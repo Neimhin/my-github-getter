@@ -69,6 +69,10 @@ type GitHubAPI = "users" :> Header  "user-agent" UserAgent
                          :> Capture "repo" Reponame
                          :> "issues"
                          :> Get '[JSON] GitHubIssue
+            :<|> Header "user-agent" UserAgent
+              :> BasicAuth "github" Int
+              :> "user" :> "issues" 
+              :> Get '[JSON] [GitHubIssue]
 
 gitHubAPI :: Proxy GitHubAPI
 gitHubAPI = Proxy
@@ -77,6 +81,9 @@ getUser ::          Maybe UserAgent -> BasicAuthData -> Username            -> C
 getUserRepos ::     Maybe UserAgent -> BasicAuthData -> Username            -> ClientM [GitHubRepo]
 getRepoContribs ::  Maybe UserAgent -> BasicAuthData -> Username -> Reponame -> ClientM [RepoContributor]
 getIssues ::        Maybe UserAgent -> BasicAuthData -> Owner -> Reponame -> ClientM GitHubIssue
+getUserIssues ::    Maybe USerAgent -> BasicAuthData -> ClientM [GitHubIssue]
 
+
+-- Build the functions
 getUser :<|> getUserRepos :<|> getRepoContribs :<|> getIssues = client gitHubAPI
 
