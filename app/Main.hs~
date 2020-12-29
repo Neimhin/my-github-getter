@@ -6,5 +6,6 @@ import System.Environment
 main :: IO ()
 main = do
   progname <- getProgName
-  putStrLn $ "Running: " ++ progname
-  gitHubProgram
+  (_:startingUsername:_) <- getArgs
+  putStrLn $ "Running Neimhin's program: " ++ progname
+  neimhin'sFunc startingUsername

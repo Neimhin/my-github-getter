@@ -35,16 +35,75 @@ import Data.ByteString.UTF8 (fromString)
 module Token where
 token = "<your-token-here>"
 -}
-import Token
+import Token as TOKEN
 
-neimhin'sFunc :: IO ()
-neimhin'sFunc = do
+neimhin'sFunc :: [Char] -> [Char] -> IO ()
+neimhin'sFunc authenticationName username = do
   putStrLn "Functions written by Neimhin:\n"
-  (authenticationName:_) <- getArgs
-  -- token has been imported from Token.hs
-  let auth = BasicAuthData (fromString authenticationName) (fromString token) 
-  getHighestContributorToCatch2 auth
-  
+  let firstSetOfRepos = (getRepos auth (pack username))
+  firstSetOfRepos >>= \case
+    Left err -> putStrLn $ show err
+    Right listOfRepos@(firstRepo:_) -> do
+      putStrLn $ username ++ "'s repos are: " ++
+          intercalate ", " (map (\(GH.GitHubRepo n _ _) -> unpack n) listOfRepos)
+      fmap partitionEithers (mapM (getContribs auth (pack username)) listOfRepos) >>= \case
+          ([], listOfListsOfContributors) -> do
+                putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
+                case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
+                   Nothing -> putStrLn "no highest contributor found"
+                   Just highest@(GH.RepoContributor highest_login _) -> do 
+                     putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
+                     putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
+                     neimhin'sFunc authenticationName (unpack (highest_login))
+          (errs, listOfListsOfContributors) -> do
+                putStrLn $ "ERROR\tthere were some errors while collecting contributors\n" ++ show errs
+                putStrLn $ "trying to continue anyway"
+                putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
+                case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
+                   Nothing -> putStrLn "no highest contributor found"
+                   Just highest@(GH.RepoContributor highest_login _) -> do 
+                     putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
+                     putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
+                     neimhin'sFunc authenticationName (unpack (highest_login))
+               
+  where 
+        -- token has been imported from Token.hs
+        auth = BasicAuthData (fromString authenticationName) (fromString TOKEN.token)
+        getContribs :: BasicAuthData -> GH.Username -> GH.GitHubRepo -> IO (Either SC.ClientError [GH.RepoContributor])
+        getContribs auth name (GH.GitHubRepo repo _ _) = do
+          putStr $ "."
+          SC.runClientM (GH.getRepoContribs (Just "haskell-app") auth name repo) =<< env
+        
+        getJusts :: [Maybe a] -> [a]
+        getJusts x = getJusts' [] x
+        getJusts' :: [a] -> [Maybe a] -> [a]
+        getJusts' xs [] = xs
+        getJusts' xs (Nothing:as) = getJusts' xs as
+        getJusts' xs (Just a :as) = getJusts' (a:xs) as   
+{-
+getHighestContributor :: BasicAuthData -> [GH.GitHubRepo] ->  Maybe GH.RepoContributor -> IO ()
+getHighestContributor auth repos = getHighestContributor' auth repos Nothing
+
+getHighestContributor' :: BasicAuthData -> [GH.GitHubRepo] -> Maybe GH.RepoContributor -> IO ()
+getHighestContributor' _ [] highest = highest
+getHighestContributor' auth (gitHubRepo:xs) highest = do
+  let getRepoContribsResult = env >>= (SC.runClientM (GH.getRepoContribs (Just "haskell-app") auth (pack "Neimhin") (GH.ownername gitHubRepo)))
+  getRepoContribsResult >>= \case 
+     Left err -> do putStrLn $ "Goofs on getRepoContribs: " ++ show err
+     Right result -> case (getHighest result) of 
+                       Nothing -> getHighestContributor' auth xs highest
+                       highest' -> getHighestContributor' auth xs (highestOf highest highest')
+-}
+
+highestOf Nothing new = new
+highestOf (Just old) (Just new) = case (compare old' new') of 
+     LT -> (Just new)
+     otherwise -> (Just old)
+   where
+      old' = GH.contributions old
+      new' = GH.contributions new
+
+
 
 getHighestContributorToCatch2 auth = do 
   manager' <- newManager tlsManagerSettings
@@ -54,14 +113,16 @@ getHighestContributorToCatch2 auth = do
      Left err -> do putStrLn $ "Goofs on getRepoContribs: " ++ show err
      Right result -> case (getHighest result) of 
                        Nothing -> putStrLn "No contributors found"
-                       Just highest -> putStrLn $ "The highest contributor was: " ++ show highest
+                       Just highest -> putStrLn $ "The highest contributor to Catch2 is: " ++ show highest
 
-getNeimhin auth = (SC.runClientM (GH.getUser (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
+getNeimhin auth =  (SC.runClientM (GH.getUser (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
             >>= \case
                Left err -> do
                     putStrLn $ "Error while trying GH.getUser" ++ show err
                Right result -> do
                     putStrLn $ show result
+
+getRepos auth username = (SC.runClientM (GH.getUserRepos (Just "haskell-app") auth username) =<< env)
   
 getNeimhin'sRepos auth = (SC.runClientM (GH.getUserRepos (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
    >>= \case
@@ -138,13 +199,13 @@ testGitHubCall auth name =
       -- now lets get the users repositories
       (SC.runClientM (GH.getUserRepos (Just "haskell-app") auth name) =<< env) >>= \case
         Left err -> do
-          putStrLn $ "heuston, we have a problem (gettign repos): " ++ show err
+          putStrLn $ "heuston, we have a problem (getting repos): " ++ show err
         Right repos -> do
           putStrLn $ " repositories are:" ++
             intercalate ", " (map (\(GH.GitHubRepo n _ _ ) -> unpack n) repos)
 
           -- now lets get the full list of collaborators from repositories
-          partitionEithers <$> mapM (getContribs auth name) repos >>= \case
+          partitionEithers `fmap` mapM (getContribs auth name) repos >>= \case
 
             ([], contribs) ->
               putStrLn $ " contributors are: " ++

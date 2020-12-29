@@ -30,7 +30,7 @@ data GitHubUser =
              } deriving (Generic, FromJSON, Show)
 
 data GitHubRepo =
-  GitHubRepo { name :: Text
+  GitHubRepo { ownername :: Text
              , fullname :: Maybe Text
              , language :: Maybe Text
              } deriving (Generic, FromJSON, Show)
@@ -63,10 +63,10 @@ type GitHubAPI =
               :> "users" :> Capture "username" Username  :> "repos" 
               :> Get '[JSON] [GitHubRepo]
             
-            -- GET /users/:username/:repo/contributors             
+            -- GET /repos/:username/:repo/contributors             
             :<|> Header  "user-agent" UserAgent
               :> BasicAuth "github" Int 
-              :> "users" :> Capture "username" Username :> Capture "repo" Reponame :> "contributors" 
+              :> "repos" :> Capture "username" Username :> Capture "repo" Reponame :> "contributors" 
               :>  Get '[JSON] [RepoContributor]
             
             -- GET /repos/:owner/:repo/issues            
