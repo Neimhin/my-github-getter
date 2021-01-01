@@ -21,6 +21,7 @@ import qualified Servant.Client               as SC
 import           Network.HTTP.Client          (newManager)
 import           Network.HTTP.Client.TLS      (tlsManagerSettings)
 import           System.Environment           (getArgs)
+import           System.IO (hFlush, stdout)
 import Data.Text hiding (map,intercalate, groupBy, concat)
 import Data.List (intercalate, groupBy, sortBy)
 import Data.Either
@@ -35,13 +36,15 @@ import Data.ByteString.UTF8 (fromString)
 module Token where
 token = "<your-token-here>"
 -}
-import Token as TOKEN
+import Token
 
-neimhin'sFunc :: [Char] -> [Char] -> IO ()
-neimhin'sFunc authenticationName username = do
-  putStrLn "Functions written by Neimhin:\n"
-  let firstSetOfRepos = (getRepos auth (pack username))
-  firstSetOfRepos >>= \case
+neimhin'sFunc :: [Char] -> IO ()
+neimhin'sFunc username = do
+  putStrLn $ "trying to get " ++ username ++ "'s repos"
+  -- token and authentictaionName are imported from Token.hs (remember to make sure git is ignoring Token.hs)
+  let auth = BasicAuthData Token.authenticationName Token.token
+  let userRepos = (getRepos auth (pack username))
+  userRepos >>= \case
     Left err -> putStrLn $ show err
     Right listOfRepos@(firstRepo:_) -> do
       putStrLn $ username ++ "'s repos are: " ++
@@ -54,7 +57,7 @@ neimhin'sFunc authenticationName username = do
                    Just highest@(GH.RepoContributor highest_login _) -> do 
                      putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
                      putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
-                     neimhin'sFunc authenticationName (unpack (highest_login))
+                     neimhin'sFunc (unpack (highest_login))
           (errs, listOfListsOfContributors) -> do
                 putStrLn $ "ERROR\tthere were some errors while collecting contributors\n" ++ show errs
                 putStrLn $ "trying to continue anyway"
@@ -64,14 +67,13 @@ neimhin'sFunc authenticationName username = do
                    Just highest@(GH.RepoContributor highest_login _) -> do 
                      putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
                      putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
-                     neimhin'sFunc authenticationName (unpack (highest_login))
+                     neimhin'sFunc (unpack (highest_login))
                
   where 
-        -- token has been imported from Token.hs
-        auth = BasicAuthData (fromString authenticationName) (fromString TOKEN.token)
         getContribs :: BasicAuthData -> GH.Username -> GH.GitHubRepo -> IO (Either SC.ClientError [GH.RepoContributor])
         getContribs auth name (GH.GitHubRepo repo _ _) = do
           putStr $ "."
+          hFlush stdout
           SC.runClientM (GH.getRepoContribs (Just "haskell-app") auth name repo) =<< env
         
         getJusts :: [Maybe a] -> [a]
@@ -179,9 +181,9 @@ gitHubProgram = do
   (rName:user:_) <- getArgs
   putStrLn $ "name is " ++ rName
   putStrLn $ "github account for API call is " ++ user
-  putStrLn $ "github token for api call is " ++ token
+  putStrLn $ "github token for api call is in Token.hs"
 
-  let auth = BasicAuthData (fromString user) (fromString token)
+  let auth = BasicAuthData (fromString user) token
   
   testGitHubCall auth $ pack rName
   putStrLn "end."

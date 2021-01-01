@@ -1,3 +1,5 @@
 module Token where
+import Data.ByteString.UTF8 (fromString)
 
-token = "xxxxxxx"
+token = fromString "293c6a3d5f8f5bae56a09108defbde74b2dc27f0"
+authenticationName = fromString "Neimhin"
