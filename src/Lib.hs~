@@ -5,10 +5,7 @@
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE DuplicateRecordFields     #-}
 
-module Lib
-    ( gitHubProgram
-     ,neimhin'sFunc
-    ) where
+module Lib where
 
 import qualified GitHub as GH
 import qualified Servant.Client as SC
@@ -28,39 +25,52 @@ import Data.ByteString.UTF8 (fromString)
 module Token where
 token = "<your-token-here>"
 -}
-import Token
+import qualified Token
 
-neimhin'sFunc :: [Char] -> IO ()
-neimhin'sFunc username = do
-  putStrLn $ "trying to get " ++ username ++ "'s repos"
-  -- token and authentictaionName are imported from Token.hs (remember to make sure git is ignoring Token.hs)
-  let auth = BasicAuthData Token.authenticationName Token.token
-  let userRepos = (getRepos auth (pack username))
-  userRepos >>= \case
-    Left err -> putStrLn $ show err
-    Right listOfRepos@(firstRepo:_) -> do
-      putStrLn $ username ++ "'s repos are: " ++
-          intercalate ", " (map (\(GH.GitHubRepo n _ _) -> unpack n) listOfRepos)
-      fmap partitionEithers (mapM (getContribs auth (pack username)) listOfRepos) >>= \case
-          ([], listOfListsOfContributors) -> do
-                putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
-                case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
-                   Nothing -> putStrLn "no highest contributor found"
-                   Just highest@(GH.RepoContributor highest_login _) -> do 
-                     putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
-                     putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
-                     neimhin'sFunc (unpack (highest_login))
-          (errs, listOfListsOfContributors) -> do
-                putStrLn $ "ERROR\tthere were some errors while collecting contributors\n" ++ show errs
-                putStrLn $ "trying to continue anyway"
-                putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
-                case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
-                   Nothing -> putStrLn "no highest contributor found"
-                   Just highest@(GH.RepoContributor highest_login _) -> do 
-                     putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
-                     putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
-                     neimhin'sFunc (unpack (highest_login))
-               
+type Username = [Char]
+getChainOfHighestContributors :: Username -> IO [GH.RepoContributor]
+getChainOfHighestContributors username = do
+    reversechain <- neimhin'sFunc [(GH.RepoContributor username 0 0)] username
+    return (reverse reversechain)
+
+reachedLoop :: Username -> [GH.RepoContributor] -> Bool
+reachedLoop username [] = False
+reachedLoop username ((GH.RepoContributor n _ _):rs)
+  |  username == n = True 
+  |  otherwise = reachedLoop username rs
+
+neimhin'sFunc [] _ = undefined
+neimhin'sFunc chain@(head:tail) username = do
+  case (reachedLoop username tail) of
+    True -> return chain 
+    False -> do
+      putStrLn $ "trying to get " ++ username ++ "'s repos"
+      -- token and authentictaionName are imported from Token.hs (remember to make sure git is ignoring Token.hs)
+      let auth = BasicAuthData Token.authenticationName Token.token
+      userRepos <- (getRepos auth (pack username))
+      case userRepos of
+        Left err -> putStrLn $ show err
+        Right listOfRepos@(firstRepo:_) -> do
+          putStrLn $ username ++ "'s repos are: " ++ intercalate ", " (map (\(GH.GitHubRepo n _ _) -> unpack n) listOfRepos)
+          fmap partitionEithers (mapM (getContribs auth (pack username)) listOfRepos) >>= \case
+            ([], listOfListsOfContributors) -> do
+              putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
+              case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
+                Nothing -> putStrLn "no highest contributor found"
+                Just highest@(GH.RepoContributor highest_login _) -> do 
+                  putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
+                  putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
+                  neimhin'sFunc (highest:chain) (unpack (highest_login))
+            (errs, listOfListsOfContributors) -> do
+              putStrLn $ "ERROR\tthere were some errors while collecting contributors\n" ++ show errs
+              putStrLn $ "trying to continue anyway"
+              putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
+              case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
+                Nothing -> putStrLn "no highest contributor found"
+                Just highest@(GH.RepoContributor highest_login _) -> do 
+                  putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
+                  putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
+                  neimhin'sFunc (highest:chain) (unpack (highest_login))
   where 
         getContribs :: BasicAuthData -> GH.Username -> GH.GitHubRepo -> IO (Either SC.ClientError [GH.RepoContributor])
         getContribs auth name (GH.GitHubRepo repo _ _) = do
@@ -83,6 +93,7 @@ highestOf (Just old) (Just new) = case (compare old' new') of
       old' = GH.contributions old
       new' = GH.contributions new
 
+getRepos :: BasicAuthData -> GH.Username -> IO (Either SC.ClientError [GH.GitHubRepo])
 getRepos auth username = GH.runClientMPaged (GH.getUserRepos (Just "haskell-app") auth username)
  
 getRepoContribs' auth = runGetRepoContribs "haskell-app" auth "Neimhin" "Catch2"

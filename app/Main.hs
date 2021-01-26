@@ -8,4 +8,5 @@ main = do
   progname <- getProgName
   (startingUsername:_) <- getArgs
   putStrLn $ "Running Neimhin's program: " ++ progname
-  neimhin'sFunc startingUsername
+  chain <- getChainOfHighestContributors startingUsername
+  putSrLn $ show chain
