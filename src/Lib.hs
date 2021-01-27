@@ -38,7 +38,8 @@ data Graph = Graph {
 } deriving (Generic, Aeson.ToJSON, Show)
 
 data Node = Node {
-    id :: Text
+    id :: Text,
+    value :: Integer
 } deriving (Generic, Aeson.ToJSON, Show)
 
 data Link = Link {
@@ -47,6 +48,20 @@ data Link = Link {
   , source_value :: Integer
   , target_value :: Integer
 } deriving (Generic, Aeson.ToJSON, Show)
+
+generateNodes :: [Link] -> [Node]
+generateNodes xs = generateNodes' [] xs
+
+generateNodes' :: [Node] -> [Link] -> [Node]
+generateNodes' found [] = found
+generateNodes' found ((Link new _ new_value _):xs) 
+    | newTo found new  = generateNodes' ((Node new new_value):found) xs
+    | otherwise = generateNodes' found xs
+
+newTo :: [Node] -> Text -> Bool
+newTo [] _ = True
+newTo ((Node id _):xs) id' | id == id' = False
+                         | otherwise = newTo xs id'
 
 generateLinks :: [GH.RepoContributor] -> [Link]
 generateLinks xs = (generateLinks' [] xs)
@@ -59,7 +74,9 @@ generateLinks' found ((GH.RepoContributor source source_value):b@(GH.RepoContrib
 type Username = [Char]
 getChainOfHighestContributors :: Username -> IO [GH.RepoContributor]
 getChainOfHighestContributors username = do
-    reversechain <- neimhin'sFunc [] username
+    -- token and authentictaionName are imported from Token.hs (remember to make sure git is ignoring Token.hs)
+    let auth = BasicAuthData Token.authenticationName Token.token
+    reversechain <- neimhin'sFunc [] username auth
     return (reverse reversechain)
 
 reachedLoop :: [GH.RepoContributor] -> Bool
@@ -70,19 +87,19 @@ reachedLoop' _ [] = False
 reachedLoop' n ((GH.RepoContributor n' _):rs) | n == n' = True
                        | otherwise = reachedLoop' n rs
 
-neimhin'sFunc :: [GH.RepoContributor] -> Username -> IO [GH.RepoContributor]
-neimhin'sFunc chain username = do
+neimhin'sFunc :: [GH.RepoContributor] -> Username -> BasicAuthData -> IO [GH.RepoContributor]
+neimhin'sFunc chain username auth = do
   case (reachedLoop chain) of
     True -> return chain 
     False -> do
       putStrLn $ "trying to get " ++ username ++ "'s repos"
-      -- token and authentictaionName are imported from Token.hs (remember to make sure git is ignoring Token.hs)
-      let auth = BasicAuthData Token.authenticationName Token.token
+      putStrLn "1"
       userRepos <- (getRepos auth (pack username))
+      putStrLn "2"
       case userRepos of
         Left err -> do putStrLn $ "error getting list of repos for " ++ username ++ ":\n" ++ (show err)
                        return chain
-        Right listOfRepos@(firstRepo:_) -> do
+        Right listOfRepos -> do
           putStrLn $ username ++ "'s repos are: " ++ intercalate ", " (map (\(GH.GitHubRepo n _ _) -> unpack n) listOfRepos)
           fmap partitionEithers (mapM (getContribs auth (pack username)) listOfRepos) >>= \case
             (errs, listOfListsOfContributors) -> do
@@ -96,7 +113,7 @@ neimhin'sFunc chain username = do
                 Just highest@(GH.RepoContributor highest_login _) -> do 
                   putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
                   putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
-                  result <- neimhin'sFunc (highest:chain) (unpack (highest_login))
+                  result <- neimhin'sFunc (highest:chain) (unpack (highest_login)) auth
                   return result
   where 
         getContribs :: BasicAuthData -> GH.Username -> GH.GitHubRepo -> IO (Either SC.ClientError [GH.RepoContributor])

@@ -1,3 +1,1 @@
-start "stack run neimhin"
-start "stack run torvalds"
-start "stack run sasunts"
+start-job {stack exec -- github-get-EXE neimhin}
