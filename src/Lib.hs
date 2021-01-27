@@ -1,32 +1,26 @@
 {-# LANGUAGE DataKinds            #-}
-{-# LANGUAGE DeriveAnyClass       #-}
-{-# LANGUAGE DeriveGeneric        #-}
 {-# LANGUAGE FlexibleContexts     #-}
 {-# LANGUAGE FlexibleInstances    #-}
 {-# LANGUAGE OverloadedStrings    #-}
-{-# LANGUAGE StandaloneDeriving   #-}
-{-# LANGUAGE TemplateHaskell      #-}
-{-# LANGUAGE TypeOperators        #-}
-{-# LANGUAGE TypeSynonymInstances #-}
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE DuplicateRecordFields     #-}
+{-# LANGUAGE DeriveAnyClass    #-}
+{-# LANGUAGE DeriveGeneric     #-}
 
-module Lib
-    ( gitHubProgram
-     ,neimhin'sFunc
-    ) where
+module Lib where
 
 import qualified GitHub as GH
-import qualified Servant.Client               as SC
-import           Network.HTTP.Client          (newManager)
-import           Network.HTTP.Client.TLS      (tlsManagerSettings)
+import qualified Servant.Client as SC
 import           System.Environment           (getArgs)
 import           System.IO (hFlush, stdout)
-import Data.Text hiding (map,intercalate, groupBy, concat)
+import Data.Text (Text, pack, unpack)
 import Data.List (intercalate, groupBy, sortBy)
-import Data.Either
+import Data.Either (partitionEithers)
 import           Servant.API                (BasicAuthData (..))
 import Data.ByteString.UTF8 (fromString)
+
+import GHC.Generics ( Generic )
+import qualified Data.Aeson as Aeson
 
 -- To use this program you must authenticate your API calls.
 -- Create a module in src/Token.hs. Make sure git is ignoring that file
@@ -36,45 +30,97 @@ import Data.ByteString.UTF8 (fromString)
 module Token where
 token = "<your-token-here>"
 -}
-import Token
+import qualified Token
 
-neimhin'sFunc :: [Char] -> IO ()
-neimhin'sFunc username = do
-  putStrLn $ "trying to get " ++ username ++ "'s repos"
-  -- token and authentictaionName are imported from Token.hs (remember to make sure git is ignoring Token.hs)
-  let auth = BasicAuthData Token.authenticationName Token.token
-  let userRepos = (getRepos auth (pack username))
-  userRepos >>= \case
-    Left err -> putStrLn $ show err
-    Right listOfRepos@(firstRepo:_) -> do
-      putStrLn $ username ++ "'s repos are: " ++
-          intercalate ", " (map (\(GH.GitHubRepo n _ _) -> unpack n) listOfRepos)
-      fmap partitionEithers (mapM (getContribs auth (pack username)) listOfRepos) >>= \case
-          ([], listOfListsOfContributors) -> do
-                putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
-                case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
-                   Nothing -> putStrLn "no highest contributor found"
-                   Just highest@(GH.RepoContributor highest_login _) -> do 
-                     putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
-                     putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
-                     neimhin'sFunc (unpack (highest_login))
-          (errs, listOfListsOfContributors) -> do
-                putStrLn $ "ERROR\tthere were some errors while collecting contributors\n" ++ show errs
-                putStrLn $ "trying to continue anyway"
-                putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
-                case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
-                   Nothing -> putStrLn "no highest contributor found"
-                   Just highest@(GH.RepoContributor highest_login _) -> do 
-                     putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
-                     putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
-                     neimhin'sFunc (unpack (highest_login))
-               
+data Graph = Graph {
+    nodes :: [Node],
+    links :: [Link]
+} deriving (Generic, Aeson.ToJSON, Show)
+
+data Node = Node {
+    id :: Text,
+    value :: Integer
+} deriving (Generic, Aeson.ToJSON, Show)
+
+data Link = Link {
+    source :: Text
+  , target :: Text
+  , source_value :: Integer
+  , target_value :: Integer
+} deriving (Generic, Aeson.ToJSON, Show)
+
+generateNodes :: [Link] -> [Node]
+generateNodes xs = generateNodes' [] xs
+
+generateNodes' :: [Node] -> [Link] -> [Node]
+generateNodes' found [] = found
+generateNodes' found ((Link new _ new_value _):xs) 
+    | newTo found new  = generateNodes' ((Node new new_value):found) xs
+    | otherwise = generateNodes' found xs
+
+newTo :: [Node] -> Text -> Bool
+newTo [] _ = True
+newTo ((Node id _):xs) id' | id == id' = False
+                         | otherwise = newTo xs id'
+
+generateLinks :: [GH.RepoContributor] -> [Link]
+generateLinks xs = (generateLinks' [] xs)
+ 
+generateLinks' found [] = found 
+generateLinks' found (a:[]) = found
+generateLinks' found ((GH.RepoContributor source source_value):b@(GH.RepoContributor target target_value):xs) =
+  generateLinks' ((Link source target source_value target_value):found) (b:xs)
+
+type Username = [Char]
+getChainOfHighestContributors :: Username -> IO [GH.RepoContributor]
+getChainOfHighestContributors username = do
+    -- token and authentictaionName are imported from Token.hs (remember to make sure git is ignoring Token.hs)
+    let auth = BasicAuthData Token.authenticationName Token.token
+    reversechain <- neimhin'sFunc [] username auth
+    return (reverse reversechain)
+
+reachedLoop :: [GH.RepoContributor] -> Bool
+reachedLoop [] = False
+reachedLoop ((GH.RepoContributor n _):rs) = reachedLoop' n rs
+
+reachedLoop' _ [] = False
+reachedLoop' n ((GH.RepoContributor n' _):rs) | n == n' = True
+                       | otherwise = reachedLoop' n rs
+
+neimhin'sFunc :: [GH.RepoContributor] -> Username -> BasicAuthData -> IO [GH.RepoContributor]
+neimhin'sFunc chain username auth = do
+  case (reachedLoop chain) of
+    True -> return chain 
+    False -> do
+      putStrLn $ "trying to get " ++ username ++ "'s repos"
+      putStrLn "1"
+      userRepos <- (getRepos auth (pack username))
+      putStrLn "2"
+      case userRepos of
+        Left err -> do putStrLn $ "error getting list of repos for " ++ username ++ ":\n" ++ (show err)
+                       return chain
+        Right listOfRepos -> do
+          putStrLn $ username ++ "'s repos are: " ++ intercalate ", " (map (\(GH.GitHubRepo n _ _) -> unpack n) listOfRepos)
+          fmap partitionEithers (mapM (getContribs auth (pack username)) listOfRepos) >>= \case
+            (errs, listOfListsOfContributors) -> do
+              case errs of 
+                  (x:_) -> putStrLn $ "some errors were found:\n" ++ (show errs)
+                  [] -> putStrLn $ "smooth sailing getting listOfListsOfContributors for " ++ username
+              putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
+              case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
+                Nothing -> do putStrLn "no highest contributor found. terminating now"
+                              return chain
+                Just highest@(GH.RepoContributor highest_login _) -> do 
+                  putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
+                  putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
+                  result <- neimhin'sFunc (highest:chain) (unpack (highest_login)) auth
+                  return result
   where 
         getContribs :: BasicAuthData -> GH.Username -> GH.GitHubRepo -> IO (Either SC.ClientError [GH.RepoContributor])
         getContribs auth name (GH.GitHubRepo repo _ _) = do
-          putStr $ "."
+          putStr $ ((show repo) ++ ":\n")
           hFlush stdout
-          SC.runClientM (GH.getRepoContribs (Just "haskell-app") auth name repo) =<< env
+          GH.runClientMPaged (GH.getRepoContribs (Just "haskell-app") auth name repo)
         
         getJusts :: [Maybe a] -> [a]
         getJusts x = getJusts' [] x
@@ -82,20 +128,6 @@ neimhin'sFunc username = do
         getJusts' xs [] = xs
         getJusts' xs (Nothing:as) = getJusts' xs as
         getJusts' xs (Just a :as) = getJusts' (a:xs) as   
-{-
-getHighestContributor :: BasicAuthData -> [GH.GitHubRepo] ->  Maybe GH.RepoContributor -> IO ()
-getHighestContributor auth repos = getHighestContributor' auth repos Nothing
-
-getHighestContributor' :: BasicAuthData -> [GH.GitHubRepo] -> Maybe GH.RepoContributor -> IO ()
-getHighestContributor' _ [] highest = highest
-getHighestContributor' auth (gitHubRepo:xs) highest = do
-  let getRepoContribsResult = env >>= (SC.runClientM (GH.getRepoContribs (Just "haskell-app") auth (pack "Neimhin") (GH.ownername gitHubRepo)))
-  getRepoContribsResult >>= \case 
-     Left err -> do putStrLn $ "Goofs on getRepoContribs: " ++ show err
-     Right result -> case (getHighest result) of 
-                       Nothing -> getHighestContributor' auth xs highest
-                       highest' -> getHighestContributor' auth xs (highestOf highest highest')
--}
 
 highestOf Nothing new = new
 highestOf (Just old) (Just new) = case (compare old' new') of 
@@ -105,52 +137,10 @@ highestOf (Just old) (Just new) = case (compare old' new') of
       old' = GH.contributions old
       new' = GH.contributions new
 
-
-
-getHighestContributorToCatch2 auth = do 
-  manager' <- newManager tlsManagerSettings
-  let environment = do return $ SC.mkClientEnv manager' (SC.BaseUrl SC.Http "api.github.com" 80 "")
-  let getRepoContribsResult = environment >>= (SC.runClientM (GH.getRepoContribs (Just "haskell-app") auth (pack "Neimhin") (pack "Catch2")))
-  getRepoContribsResult >>= \case 
-     Left err -> do putStrLn $ "Goofs on getRepoContribs: " ++ show err
-     Right result -> case (getHighest result) of 
-                       Nothing -> putStrLn "No contributors found"
-                       Just highest -> putStrLn $ "The highest contributor to Catch2 is: " ++ show highest
-
-getNeimhin auth =  (SC.runClientM (GH.getUser (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
-            >>= \case
-               Left err -> do
-                    putStrLn $ "Error while trying GH.getUser" ++ show err
-               Right result -> do
-                    putStrLn $ show result
-
-getRepos auth username = (SC.runClientM (GH.getUserRepos (Just "haskell-app") auth username) =<< env)
-  
-getNeimhin'sRepos auth = (SC.runClientM (GH.getUserRepos (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
-   >>= \case
-    Left err -> do
-      putStrLn $ "Error while trying GH.getUserRepos " ++ show err
-    Right result -> do
-      putStrLn $ "hooray\n" ++ show result 
-
-
-getAuthenticatedUser'sIssues auth = (SC.runClientM (GH.getUserIssues (Just "haskell-app") auth) =<< env) 
-   >>= \case
-    Left err -> do
-      putStrLn $ "\n\nError while trying GH.getUserIssues " ++ show err ++ "\n\n"
-    Right result -> do
-      putStrLn $ "\n\nhooray, here are the authenticated user's Issues\n\n" ++ show result 
-
-
-getCatch2Issues auth = (SC.runClientM (GH.getIssues (Just "haskell-app") auth (pack "catchorg") (pack "Catch2")) =<< env) 
-   >>= \case
-    Left err -> do
-      putStrLn $ "\n\nError while trying GH.getIssues " ++ show err ++ "\n\n"
-    Right result -> do
-      putStrLn $ "\n\nhooray, here are Neimhin's Issues on Catch2\n" ++ show result 
+getRepos :: BasicAuthData -> GH.Username -> IO (Either SC.ClientError [GH.GitHubRepo])
+getRepos auth username = GH.runClientMPaged (GH.getUserRepos (Just "haskell-app") auth username)
  
-
-getRepoContribs' auth =  env >>= runGetRepoContribs "haskell-app" auth "Neimhin" "Catch2"
+getRepoContribs' auth = runGetRepoContribs "haskell-app" auth "Neimhin" "Catch2"
       >>= \x -> case x of
        Left err -> do
          putStrLn $ "Error while trying GH.getUserRepos " ++ show err
@@ -168,13 +158,73 @@ getHighest' highestSoFar (contributor:list) = case (compare (GH.contributions co
        otherwise -> getHighest' contributor list
 
 
-env :: IO SC.ClientEnv
-env = do
-  manager <- newManager tlsManagerSettings
-  return $ SC.mkClientEnv manager (SC.BaseUrl SC.Http "api.github.com" 80 "")
+runGetRepoContribs userAgent auth username reponame = GH.runClientMPaged $ GH.getRepoContribs (Just userAgent) auth (pack username) (pack reponame)
 
-runGetRepoContribs userAgent auth username reponame = SC.runClientM $ GH.getRepoContribs (Just userAgent) auth (pack username) (pack reponame)
+{-
+getHighestContributor :: BasicAuthData -> [GH.GitHubRepo] ->  Maybe GH.RepoContributor -> IO ()
+getHighestContributor auth repos = getHighestContributor' auth repos Nothing
 
+getHighestContributor' :: BasicAuthData -> [GH.GitHubRepo] -> Maybe GH.RepoContributor -> IO ()
+getHighestContributor' _ [] highest = highest
+getHighestContributor' auth (gitHubRepo:xs) highest = do
+  let getRepoContribsResult = env >>= (SC.runClientM (GH.getRepoContribs (Just "haskell-app") auth (pack "Neimhin") (GH.ownername gitHubRepo)))
+  getRepoContribsResult >>= \case 
+     Left err -> do putStrLn $ "Goofs on getRepoContribs: " ++ show err
+     Right result -> case (getHighest result) of 
+                       Nothing -> getHighestContributor' auth xs highest
+                       highest' -> getHighestContributor' auth xs (highestOf highest highest')
+-}
+
+
+{-
+getHighestContributorToCatch2 auth = do 
+  manager' <- newManager tlsManagerSettings
+  let environment = do return $ SC.mkClientEnv manager' (SC.BaseUrl SC.Http "api.github.com" 80 "")
+  let getRepoContribsResult = environment >>= (SC.runClientM (GH.getRepoContribs (Just "haskell-app") auth (pack "Neimhin") (pack "Catch2")))
+  getRepoContribsResult >>= \case 
+     Left err -> do putStrLn $ "Goofs on getRepoContribs: " ++ show err
+     Right result -> case (getHighest result) of 
+                       Nothing -> putStrLn "No contributors found"
+                       Just highest -> putStrLn $ "The highest contributor to Catch2 is: " ++ show highest
+
+getNeimhin auth =  (SC.runClientM (GH.getUser (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
+            >>= \case
+               Left err -> do
+                    putStrLn $ "Error while trying GH.getUser" ++ show err
+               Right result -> do
+                    putStrLn $ show result
+-}
+
+{- 
+getNeimhin'sRepos auth = (SC.runClientM (GH.getUserRepos (Just "haskell-app") auth (pack "Neimhin")) =<< env) 
+   >>= \case
+    Left err -> do
+      putStrLn $ "Error while trying GH.getUserRepos " ++ show err
+    Right result -> do
+      putStrLn $ "hooray\n" ++ show result 
+-}
+
+
+{-
+getAuthenticatedUser'sIssues auth = (SC.runClientM (GH.getUserIssues (Just "haskell-app") auth) =<< env) 
+   >>= \case
+    Left err -> do
+      putStrLn $ "\n\nError while trying GH.getUserIssues " ++ show err ++ "\n\n"
+    Right result -> do
+      putStrLn $ "\n\nhooray, here are the authenticated user's Issues\n\n" ++ show result 
+
+
+getCatch2Issues auth = (SC.runClientM (GH.getIssues (Just "haskell-app") auth (pack "catchorg") (pack "Catch2")) =<< env) 
+   >>= \case
+    Left err -> do
+      putStrLn $ "\n\nError while trying GH.getIssues " ++ show err ++ "\n\n"
+    Right result -> do
+      putStrLn $ "\n\nhooray, here are Neimhin's Issues on Catch2\n" ++ show result 
+-}
+
+
+
+{-
 gitHubProgram :: IO ()
 gitHubProgram = do
   putStrLn "Let's try a GitHubCall"
@@ -237,10 +287,4 @@ testGitHubCall auth name =
                mapfn xs@((GH.RepoContributor l _):_) = GH.RepoContributor l .sum $ 
                                                        map (\(GH.RepoContributor _ c) -> c)  xs
                
-              
-                
-          
-
-
-
-       
+-}       

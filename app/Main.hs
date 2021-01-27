@@ -4,6 +4,11 @@ import Lib
 import System.Environment
 import Data.Aeson
 import Control.Concurrent
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 9a7dc145e37ed0056a8a3926ecf05f902a77bdbf
 
 main :: IO ()
 main = do
