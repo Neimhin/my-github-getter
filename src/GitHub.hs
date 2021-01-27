@@ -58,7 +58,7 @@ data GitHubRepo =
 data RepoContributor =
   RepoContributor { login :: Text
                   , contributions :: Integer
-                  } deriving (Generic, FromJSON, Show)
+                  } deriving (Generic, FromJSON, Show, Eq)
 
 type GitHubAPI = "users" :> Header  "user-agent" UserAgent
                          :> BasicAuth "github" Int

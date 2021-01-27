@@ -105,8 +105,7 @@ runClientMPaged fn = recursiveCall "1"
     putStrLn $ "running runClientMPaged " ++ page
     (SC.runClientM (fn $ Just page)=<< env) >>= \case
      Left e -> return $ Left e -- silently return error if there is one
-     Right (Headers rs hs) -> do
-       putStrLn "found Headers"
+     Right (Headers rs hs) ->
            -- the following is a bit of a hack but does the job extracting nextPage link, and can be used
            -- to extract other links also, as it gets all links returned by the links header field, before
            -- extracting the "next" link page

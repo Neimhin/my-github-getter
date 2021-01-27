@@ -2,6 +2,7 @@ module Main where
 
 import Lib
 import System.Environment
+import Data.Aeson
 
 main :: IO ()
 main = do
@@ -9,4 +10,6 @@ main = do
   (startingUsername:_) <- getArgs
   putStrLn $ "Running Neimhin's program: " ++ progname
   chain <- getChainOfHighestContributors startingUsername
-  show chain
+  let links = generateLinks chain
+  encodeFile ((startingUsername ++ ".json") :: FilePath) links
+  putStrLn $ (show (encode links))

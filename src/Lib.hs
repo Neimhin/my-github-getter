@@ -4,6 +4,8 @@
 {-# LANGUAGE OverloadedStrings    #-}
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE DuplicateRecordFields     #-}
+{-# LANGUAGE DeriveAnyClass    #-}
+{-# LANGUAGE DeriveGeneric     #-}
 
 module Lib where
 
@@ -17,6 +19,9 @@ import Data.Either (partitionEithers)
 import           Servant.API                (BasicAuthData (..))
 import Data.ByteString.UTF8 (fromString)
 
+import GHC.Generics ( Generic )
+import qualified Data.Aeson as Aeson
+
 -- To use this program you must authenticate your API calls.
 -- Create a module in src/Token.hs. Make sure git is ignoring that file
 -- `echo src/Token.hs >> .gitignore`
@@ -27,22 +32,47 @@ token = "<your-token-here>"
 -}
 import qualified Token
 
+data Graph = Graph {
+    nodes :: [Node],
+    links :: [Link]
+} deriving (Generic, Aeson.ToJSON, Show)
+
+data Node = Node {
+    id :: Text
+} deriving (Generic, Aeson.ToJSON, Show)
+
+data Link = Link {
+    source :: Text
+  , target :: Text
+  , source_value :: Integer
+  , target_value :: Integer
+} deriving (Generic, Aeson.ToJSON, Show)
+
+generateLinks :: [GH.RepoContributor] -> [Link]
+generateLinks xs = (generateLinks' [] xs)
+ 
+generateLinks' found [] = found 
+generateLinks' found (a:[]) = found
+generateLinks' found ((GH.RepoContributor source source_value):b@(GH.RepoContributor target target_value):xs) =
+  generateLinks' ((Link source target source_value target_value):found) (b:xs)
+
 type Username = [Char]
 getChainOfHighestContributors :: Username -> IO [GH.RepoContributor]
 getChainOfHighestContributors username = do
-    reversechain <- neimhin'sFunc [(GH.RepoContributor username 0 0)] username
+    reversechain <- neimhin'sFunc [] username
     return (reverse reversechain)
 
-reachedLoop :: Username -> [GH.RepoContributor] -> Bool
-reachedLoop username [] = False
-reachedLoop username ((GH.RepoContributor n _ _):rs)
-  |  username == n = True 
-  |  otherwise = reachedLoop username rs
+reachedLoop :: [GH.RepoContributor] -> Bool
+reachedLoop [] = False
+reachedLoop ((GH.RepoContributor n _):rs) = reachedLoop' n rs
+
+reachedLoop' _ [] = False
+reachedLoop' n ((GH.RepoContributor n' _):rs) | n == n' = True
+                       | otherwise = reachedLoop' n rs
 
 neimhin'sFunc :: [GH.RepoContributor] -> Username -> IO [GH.RepoContributor]
-neimhin'sFunc [] _ = undefined
-neimhin'sFunc chain@(head:tail) username = do
-  case (reachedLoop username tail) of
+neimhin'sFunc chain username = do
+  case (reachedLoop chain) of
     True -> return chain 
     False -> do
       putStrLn $ "trying to get " ++ username ++ "'s repos"
@@ -50,32 +80,28 @@ neimhin'sFunc chain@(head:tail) username = do
       let auth = BasicAuthData Token.authenticationName Token.token
       userRepos <- (getRepos auth (pack username))
       case userRepos of
-        Left err -> putStrLn $ show err
+        Left err -> do putStrLn $ "error getting list of repos for " ++ username ++ ":\n" ++ (show err)
+                       return chain
         Right listOfRepos@(firstRepo:_) -> do
           putStrLn $ username ++ "'s repos are: " ++ intercalate ", " (map (\(GH.GitHubRepo n _ _) -> unpack n) listOfRepos)
           fmap partitionEithers (mapM (getContribs auth (pack username)) listOfRepos) >>= \case
-            ([], listOfListsOfContributors) -> do
-              putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
-              case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
-                Nothing -> putStrLn "no highest contributor found"
-                Just highest@(GH.RepoContributor highest_login _) -> do 
-                  putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
-                  putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
-                  neimhin'sFunc (highest:chain) (unpack (highest_login))
             (errs, listOfListsOfContributors) -> do
-              putStrLn $ "ERROR\tthere were some errors while collecting contributors\n" ++ show errs
-              putStrLn $ "trying to continue anyway"
+              case errs of 
+                  (x:_) -> putStrLn $ "some errors were found:\n" ++ (show errs)
+                  [] -> putStrLn $ "smooth sailing getting listOfListsOfContributors for " ++ username
               putStrLn $ "calculating highest contributor in " ++ username ++ "'s repos"
               case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
-                Nothing -> putStrLn "no highest contributor found"
+                Nothing -> do putStrLn "no highest contributor found. terminating now"
+                              return chain
                 Just highest@(GH.RepoContributor highest_login _) -> do 
                   putStrLn $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
                   putStrLn $ "executing `neimhin'sFunc` for " ++ show highest
-                  neimhin'sFunc (highest:chain) (unpack (highest_login))
+                  result <- neimhin'sFunc (highest:chain) (unpack (highest_login))
+                  return result
   where 
         getContribs :: BasicAuthData -> GH.Username -> GH.GitHubRepo -> IO (Either SC.ClientError [GH.RepoContributor])
         getContribs auth name (GH.GitHubRepo repo _ _) = do
-          putStr $ "."
+          putStr $ ((show repo) ++ ":\n")
           hFlush stdout
           GH.runClientMPaged (GH.getRepoContribs (Just "haskell-app") auth name repo)
         
