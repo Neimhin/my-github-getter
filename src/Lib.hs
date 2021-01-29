@@ -72,12 +72,20 @@ newTo ((Node id _):xs) id' | id == id' = False
                          | otherwise = newTo xs id'
 
 generateLinks :: [GH.RepoContributor] -> [Link]
-generateLinks xs = (generateLinks' [] xs)
- 
-generateLinks' found [] = found 
-generateLinks' found (a:[]) = found
-generateLinks' found ((GH.RepoContributor source source_value):b@(GH.RepoContributor target target_value):xs) =
-  generateLinks' ((Link source target source_value target_value):found) (b:xs)
+generateLinks chain = (generateLinks' [] chain chain)
+
+generateLinks' :: [Link] -> [GH.RepoContributor] -> [GH.RepoContributor] -> [Link] 
+generateLinks' found [] _ = found 
+generateLinks' found (next@(GH.RepoContributor source source_value):[]) chain = ((Link source target source_value target_value):found)
+    where
+      lastTarget' = lastTarget next chain
+      target = fst lastTarget'
+      target_value = snd lastTarget'
+      lastTarget s@(GH.RepoContributor n v) [] =  (n, v)
+      lastTarget s@(GH.RepoContributor n v) ((GH.RepoContributor n' v'):cs) | n == n' = (n, v)
+                                                                            | otherwise = lastTarget s cs
+generateLinks' found ((GH.RepoContributor source source_value):b@(GH.RepoContributor target target_value):xs) chain =
+  generateLinks' ((Link source target source_value target_value):found) (b:xs) chain
 
 type Username = [Char]
 getChainOfHighestContributors :: Username -> IO [GH.RepoContributor]
@@ -98,7 +106,9 @@ reachedLoop' n ((GH.RepoContributor n' _):rs) | n == n' = True
 neimhin'sFunc :: [GH.RepoContributor] -> Username -> BasicAuthData -> IO [GH.RepoContributor]
 neimhin'sFunc chain username auth = do
   case (reachedLoop chain) of
-    True -> return chain 
+    True -> do
+      putStrLn ("chain found: " ++ show chain)
+      return chain 
     False -> do
       Lib.log $ "trying to get " ++ username ++ "'s repos"
       Lib.log "1"
@@ -109,20 +119,15 @@ neimhin'sFunc chain username auth = do
                        return chain
         Right listOfRepos -> do
           Lib.log $ username ++ "'s repos are: " ++ intercalate ", " (map (\(GH.GitHubRepo n _ _) -> unpack n) listOfRepos)
-          fmap partitionEithers ((mapM (getContribs auth (pack username)) listOfRepos)) >>= \case
-            (errs, listOfListsOfContributors) -> do
-              case errs of 
-                  (x:_) -> Lib.log $ "some errors were found:\n" ++ (show errs)
-                  [] -> Lib.log $ "smooth sailing getting listOfListsOfContributors for " ++ username
-              Lib.log $ "calculating highest contributor in " ++ username ++ "'s repos"
-              case (getHighest (getJusts (map getHighest listOfListsOfContributors))) of
-                Nothing -> do Lib.log "no highest contributor found. terminating now"
-                              return chain
-                Just highest@(GH.RepoContributor highest_login _) -> do 
-                  Lib.log $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
-                  Lib.log $ "executing `neimhin'sFunc` for " ++ show highest
-                  result <- neimhin'sFunc (highest:chain) (unpack (highest_login)) auth
-                  return result
+          allContribs <- getContribsForListOfReposThreaded auth (pack username) listOfRepos 
+          case getHighest allContribs of
+            Nothing -> do Lib.log "no highest contributor found. terminating now"
+                          return chain
+            Just highest@(GH.RepoContributor highest_login _) -> do 
+              Lib.log $ "the highest contributor in " ++ username ++ "'s repos is " ++ show highest
+              Lib.log $ "executing `neimhin'sFunc` for " ++ show highest
+              result <- neimhin'sFunc (highest:chain) (unpack (highest_login)) auth
+              return result
   where 
         getContribs :: BasicAuthData -> GH.Username -> GH.GitHubRepo -> IO (Either SC.ClientError [GH.RepoContributor])
         getContribs auth name (GH.GitHubRepo repo _ _) = do
@@ -141,8 +146,8 @@ getContribsForListOfReposThreaded :: BasicAuthData -> Text -> [GH.GitHubRepo] ->
 getContribsForListOfReposThreaded auth name list = do
   threadBlockingActions <- mapM forkIO (map GH.runClientMPaged (map apiCall listOfRepos))
   wrappedResults <- (sequence (map snd threadBlockingActions))
-  threadsAndResults <- mapM result wrappedResults
-  let (errs, rs) = partitionEithers threadsAndResults
+  results <- mapM result wrappedResults
+  let (errs, rs) = partitionEithers results
   Lib.log ( show errs )
   return (foldl (++) [] rs)
     where

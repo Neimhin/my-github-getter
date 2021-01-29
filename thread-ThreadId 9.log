@@ -1,54 +1,11 @@
-trying to get HugoGiraudel's repos12HugoGiraudel's repos are: ama, aoc-2020, awesome-sass, Countdown.js, CRUD.js, css3-pratique, cypress-5570, dependency-checker, dotfiles, eleventy-plugin-footnotes, espi-devblog, fela, github-release-search, hangman.js, hugogiraudel.com, ImagePreloader, inline-styler, jekyll-boilerplate, jekyll-styleguide, map-dater, node-legofy, PHP-hangman-game, react-a11y-dialog, react-a11y-footnotes, react-menu-button, react-workshop, sass-boilerplate, sass-compatibility, sass-guidelines, sass-semver, SassyBitwise, SassyCast, SassyGradients, SassyIteratorsGenerators, SassyJSON, SassyLogger, SassyMatrix, SassySort, SassyStrings, SassyTester, scrabble-helper, selectors-explained, SJSJ, squoosh, sudoku-solver, thesassway.comsome errors were found:
-[ConnectionError (HttpExceptionRequest Request {
-  host                 = "api.github.com"
-  port                 = 80
-  secure               = False
-  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
-  path                 = "/repos/HugoGiraudel/squoosh/contributors"
-  queryString          = "?page=2"
-  method               = "GET"
-  proxy                = Nothing
-  rawBody              = False
-  redirectCount        = 10
-  responseTimeout      = ResponseTimeoutDefault
-  requestVersion       = HTTP/1.1
-}
- (ConnectionFailure Network.Socket.connect: <socket: 2152>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
-  host                 = "api.github.com"
-  port                 = 80
-  secure               = False
-  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
-  path                 = "/repos/HugoGiraudel/sudoku-solver/contributors"
-  queryString          = "?page=1"
-  method               = "GET"
-  proxy                = Nothing
-  rawBody              = False
-  redirectCount        = 10
-  responseTimeout      = ResponseTimeoutDefault
-  requestVersion       = HTTP/1.1
-}
- (ConnectionFailure Network.Socket.connect: <socket: 1340>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
-  host                 = "api.github.com"
-  port                 = 80
-  secure               = False
-  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
-  path                 = "/repos/HugoGiraudel/thesassway.com/contributors"
-  queryString          = "?page=1"
-  method               = "GET"
-  proxy                = Nothing
-  rawBody              = False
-  redirectCount        = 10
-  responseTimeout      = ResponseTimeoutDefault
-  requestVersion       = HTTP/1.1
-}
- (ConnectionFailure Network.Socket.connect: <socket: 1412>: failed (Connection timed out (WSAETIMEDOUT))))]calculating highest contributor in HugoGiraudel's reposthe highest contributor in HugoGiraudel's repos is RepoContributor {login = "robinweser", contributions = 1317}executing `neimhin'sFunc` for RepoContributor {login = "robinweser", contributions = 1317}trying to get robinweser's repos12error getting list of repos for robinweser:
+trying to get HugoGiraudel's repos12error getting list of repos for HugoGiraudel:
 ConnectionError (HttpExceptionRequest Request {
   host                 = "api.github.com"
   port                 = 80
   secure               = False
   requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
-  path                 = "/users/robinweser/repos"
-  queryString          = "?page=2"
+  path                 = "/users/HugoGiraudel/repos"
+  queryString          = "?page=1"
   method               = "GET"
   proxy                = Nothing
   rawBody              = False
@@ -56,4 +13,34 @@ ConnectionError (HttpExceptionRequest Request {
   responseTimeout      = ResponseTimeoutDefault
   requestVersion       = HTTP/1.1
 }
- (ConnectionFailure Network.Socket.connect: <socket: 2412>: failed (Connection timed out (WSAETIMEDOUT))))trying to get HugoGiraudel's repos12HugoGiraudel's repos are: ama, aoc-2020, awesome-sass, Countdown.js, CRUD.js, css3-pratique, cypress-5570, dependency-checker, dotfiles, eleventy-plugin-footnotes, espi-devblog, fela, github-release-search, hangman.js, hugogiraudel.com, ImagePreloader, inline-styler, jekyll-boilerplate, jekyll-styleguide, map-dater, node-legofy, PHP-hangman-game, react-a11y-dialog, react-a11y-footnotes, react-menu-button, react-workshop, sass-boilerplate, sass-compatibility, sass-guidelines, sass-semver, SassyBitwise, SassyCast, SassyGradients, SassyIteratorsGenerators, SassyJSON, SassyLogger, SassyMatrix, SassySort, SassyStrings, SassyTester, scrabble-helper, selectors-explained, SJSJ, squoosh, sudoku-solver, thesassway.com
+ (ConnectionFailure Network.Socket.connect: <socket: 700>: failed (Connection timed out (WSAETIMEDOUT))))trying to get HugoGiraudel's repos12error getting list of repos for HugoGiraudel:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/HugoGiraudel/repos"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 768>: failed (Connection timed out (WSAETIMEDOUT))))trying to get HugoGiraudel's repos12error getting list of repos for HugoGiraudel:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/HugoGiraudel/repos"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 728>: failed (Connection timed out (WSAETIMEDOUT))))
