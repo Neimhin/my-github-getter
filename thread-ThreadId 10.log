@@ -1,0 +1,857 @@
+trying to get ornicar's repos12ornicar's repos are: ag.vim, ahDoctrineEasyEmbeddedRelationsPlugin, akka, akka-http-websocket-example, akka-stream-kafka-template.g8, alacritty, android-i18n-plurals, ApcBundle, ape-petition, app.chesslang.com, AssetOptimizerBundle, AvalancheSitemapBundle, backdoor, bahir-flink, berserk, board-creator, Buzz, bzip2-rs, casbah, cash, cats, certabo-lichess, certabo-playground, chess-database-backend, Chess-Variants-Training, chess.js, chessboardjs, chesscup, chessfactory-hall-of-fame, chessground, chessground-examples, chessmap, chessops, ChessPursuit, chess_game_visualizer, clife-step1, clojure-kit, clojure-starter, coc.nvim, community-build, conx, CSS-Parser-API, ctrlp.vim, cycle-github-emojis, cycle-onionify, cyclejs, cyclejs-examples, data-fixtures, dbal, DebuggingBundle, denite.nvim, df-api-docs, diem, diem-project, diem-talk, disposable, disposable-email-domains, dmBitLyPlugin, dmBotPlugin, dmChessPlugin, dmCkEditorPlugin, dmCommentPlugin, dmContactPlugin, dmCoreTranslatorPlugin, dmFlowPlayerPlugin, dmGithubPlugin, dmGoogleMapPlugin, dmOppPlugin, dmSqlBackupPlugin, dmTalkPlugin, dmWidgetExternalVideoPlugin, dmWidgetFeedReaderPlugin, dmWidgetGalleryPlugin, dmWidgetTwitterPlugin, doctrine2, Doctrine2-Sluggable-Functional-Behavior, DoctrineDataCollectorWithQueryList, DoctrineExtensions, DoctrineMongoDBBundle, dotfiles, dotfiles-1, draggabilly, dropship, eco, eev, Elastica, elasticsearch.github.com, engine-evaluator, fingerprintjs2, fishnet, FOQTyperBundle, FOSFacebookBundle, FOSUserBundle, ftp_backup, functional-php, furet, fzf.vim, games, GaufretteBundle, getIPIntel, gist-vim, git-achievements, git-pulls, GithubBundle, gitv, glue, Goutte, gulp, hackathon-starter, hacksquare, Hasher, haskant, haskell-prismic, hello-sbt, HerzultForumBundle, hosts, howler.js, howlerjs.com, html-template-syntax, html5-boilerplate, html5-boilerplate-server-configs, http-pgn-split, i3pystatus, idbase, Imagine, ImagineBundle, indradb, infinite-scroll, interact.js, irwin, jackalope, java-kit, javascript-jquery-starter, javascript-kit, jdub, jdubext, jedis, jquery, jquery-powertip, jquery-textcomplete, jquery-ui, jsday-cycle-js, jwt-scala, Kamon, kamon-influxdb, kcacup, lantenora, learn_you_a_scalaz, lichess-crowdin, lichess-data, lichess-db, lichess-event-stream-watcher, lichess-game-migration, lichess-gmail, lichess-layout, lichess-mobile-apk, lichess-mongo-import, lichess-oauth-server, lichess-old, lichess-playing-alerts, lichess-puzzle-kit, lichess-puzzler, lichess-search-import, lichess-uci-bot, lichess.globe, LichessBot, lichessPDFExporter, lichessPuzzlesV1toV2, lichobile, lichomail, lichs, ligamedl, lila, lila-fishnet, lila-jmh-benchmarks, lila-maven, lila-openingexplorer, lila-search, lila-ws, liquidctl, listen-to-chess, ltc, lusty, macrocosm, mail-plugin, MartIrc, maven, maxmind-geoip2-scala, MediaExposer, MediaManagerBundle, migrations, mithril.js, mixit-lichess, moment, mongo-hacker, mongobits, mongodb, mongodb-odm, mongodb-odm-documentation, mongoPHP, mongotopy, mousetrap, multiple-select, munin-lichess, muteZatShit, muteZatShit-old, nailgun, nerdcommenter, nestor, netty, netty-reactive-streams, netty-scala-http, nvim-config, oh-my-zsh, onedark.vim, onestlatech.github.io, OpenAPI-Specification, OpeningsTrainer, openingtree, optional, orm-documentation, ornicar.github.com, OrnicarAkismetBundle, OrnicarInsaneMarkdownBundle, OrnicarMessageBundle, Pagerfanta, passport-lichess, patchwork-builder, pgn-recorder, pgn4web, pgnspectator, pgnstudyrelay, php-git-repo, php-github-api, php-html-writer, php-kit, php-user-agent, phptwitterbot, piraspbay, play-autoconfig, play-cdi-leak, play-plugins, Play-ReactiveMongo, play-run-mem, play-samples, play-scala-websocket-example, play-ws, play2-blog-jousse, play20-auth, playframework-lila, plugins, praxeum, Probable-Wordlists, problem-creator, Project_Abitbol, python-lichess, pyzik, ranger, ReactiveMongo, ReactiveMongo-BSON, reactivemongo-site, ReactiveMongo-Streaming, reddit-pgn-to-gif, ReDoc, RelayChess, repos, rust-pgn-reader, rusted-cypher, s2test, salat, sbinary, sbt-bintray, sbt-dependency-graph, sbt-man, sbt-onejar, sbt-quickfix, sbt-scalabuff, scala-aichallenge, scala-csv, scala-elasticsearch, scala-kit, scala-netty, scala-paginator, scala-uri, ScalaBuff, scalachess, scalalib, scalariform, scalariver, scalascrabble, scalastic, scalatags, scalatra, scalaz, scalex, scalex-http, scalex-sbt, scalex-web, scrimage, sedis, sf2minimal, sf2playground, sizzle, sl-patched, sltc, snabbdom, snap-website, snipmate-snippets, snipmate.vim, solarized, specs2, ssu, Stockfish, stockfish.js, stockfish.pexe, StofDoctrineExtensionsBundle, storage, strategic.international_on_github, stream-voice, streetfighter2-versus, supgit, swagger-ui, swiftmailer, swisssystem, symfony-docs, tensorflow_chessbot, test-prog-in-scala, TheCoreLite, TLP, tmux-mem-cpu-load, tmuxinator, todomvc, todomvc-cycle, tsp, TTYtter-PrettyTweets, twirl, typescript-starter-cycle, unite-tag, UserScripts, userstyles, vault, vim-airline, vim-airline-themes, vim-aldmeris, vim-bufexplorer, vim-colors-solarized, vim-debug, vim-dirdo, vim-mru, vim-php-debugger, vim-php-doc, vim-php-namespace, vim-ragtag, vim-scala, vim-surround, vim-unimpaired, vim-yankring, vimium, vimperator-plugins, vindinium, vindinium-starter-clojure, vindinium-starter-python, vindinium-starter-scala, vsimbot, vue-chessboard, vulug, WhiteOctoberPagerfantaBundle, wiredtiger, wmmatching, wolfie, worldchess-frontend, wwc, xsbt, xsbt-reflect, yesod, zen-catacomb, ZendPaginatorAdapter, Zengularity-Hackday.github.io, zf2, zsh-history-substring-searchsome errors were found:
+[ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/cash/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1032>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/cats/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1032>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/certabo-lichess/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1032>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/certabo-playground/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2392>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/chess-database-backend/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1032>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/chessboardjs/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2364>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/chessfactory-hall-of-fame/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1208>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/chessground/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1476>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/doctrine2/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2916>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/DoctrineDataCollectorWithQueryList/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2384>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/DoctrineExtensions/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 3064>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/DoctrineMongoDBBundle/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2988>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/dotfiles/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 3068>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/dotfiles-1/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1008>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/draggabilly/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1008>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/dropship/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1712>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/eev/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2996>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/html5-boilerplate/contributors"
+  queryString          = "?page=8"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 416>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/i3pystatus/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 980>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/idbase/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1432>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/ImagineBundle/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 3052>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/indradb/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2388>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/infinite-scroll/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 508>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/interact.js/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1232>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/lichs/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1080>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/lila-search/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1692>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/lila-ws/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 584>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/liquidctl/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1192>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/lusty/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1276>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/mail-plugin/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 604>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/maxmind-geoip2-scala/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2984>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/OpenAPI-Specification/contributors"
+  queryString          = "?page=4"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 600>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/openingtree/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 872>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/optional/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2452>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/orm-documentation/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1276>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/ornicar.github.com/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 564>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/OrnicarAkismetBundle/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 508>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/OrnicarMessageBundle/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1368>: failed (Connection timed out (WSAETIMEDOUT)))),DecodeFailure "not enough input" (Response {responseStatusCode = Status {statusCode = 204, statusMessage = "No Content"}, responseHeaders = fromList [("Date","Thu, 28 Jan 2021 16:33:50 GMT"),("Server","GitHub.com"),("Status","204 No Content"),("X-OAuth-Scopes","admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete:packages, delete_repo, gist, notifications, repo, user, workflow, write:discussion, write:packages"),("X-Accepted-OAuth-Scopes",""),("X-GitHub-Media-Type","github.v3"),("X-RateLimit-Limit","5000"),("X-RateLimit-Remaining","2498"),("X-RateLimit-Reset","1611853971"),("x-ratelimit-used","2502"),("Access-Control-Expose-Headers","ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset"),("Access-Control-Allow-Origin","*"),("Strict-Transport-Security","max-age=31536000; includeSubdomains; preload"),("X-Frame-Options","deny"),("X-Content-Type-Options","nosniff"),("X-XSS-Protection","1; mode=block"),("Referrer-Policy","origin-when-cross-origin, strict-origin-when-cross-origin"),("Content-Security-Policy","default-src 'none'"),("Vary","Accept-Encoding, Accept, X-Requested-With"),("Vary","Accept-Encoding"),("X-GitHub-Request-Id","E200:6EDF:13D0627:15BF0BD:6012E76D")], responseHttpVersion = HTTP/1.1, responseBody = ""}),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/sbt-quickfix/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1748>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/scala-aichallenge/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1628>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/scala-csv/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1036>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/scala-elasticsearch/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2816>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/scala-kit/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1316>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/scala-paginator/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1444>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/vim-airline/contributors"
+  queryString          = "?page=3"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2972>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/vim-colors-solarized/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1340>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/vim-debug/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 3048>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/vim-php-debugger/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2236>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/vim-php-doc/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2236>: failed (Connection timed out (WSAETIMEDOUT))))]calculating highest contributor in ornicar's reposthe highest contributor in ornicar's repos is RepoContributor {login = "ornicar", contributions = 36100}executing `neimhin'sFunc` for RepoContributor {login = "ornicar", contributions = 36100}trying to get ornicar's repos12ornicar's repos are: ag.vim, ahDoctrineEasyEmbeddedRelationsPlugin, akka, akka-http-websocket-example, akka-stream-kafka-template.g8, alacritty, android-i18n-plurals, ApcBundle, ape-petition, app.chesslang.com, AssetOptimizerBundle, AvalancheSitemapBundle, backdoor, bahir-flink, berserk, board-creator, Buzz, bzip2-rs, casbah, cash, cats, certabo-lichess, certabo-playground, chess-database-backend, Chess-Variants-Training, chess.js, chessboardjs, chesscup, chessfactory-hall-of-fame, chessground, chessground-examples, chessmap, chessops, ChessPursuit, chess_game_visualizer, clife-step1, clojure-kit, clojure-starter, coc.nvim, community-build, conx, CSS-Parser-API, ctrlp.vim, cycle-github-emojis, cycle-onionify, cyclejs, cyclejs-examples, data-fixtures, dbal, DebuggingBundle, denite.nvim, df-api-docs, diem, diem-project, diem-talk, disposable, disposable-email-domains, dmBitLyPlugin, dmBotPlugin, dmChessPlugin, dmCkEditorPlugin, dmCommentPlugin, dmContactPlugin, dmCoreTranslatorPlugin, dmFlowPlayerPlugin, dmGithubPlugin, dmGoogleMapPlugin, dmOppPlugin, dmSqlBackupPlugin, dmTalkPlugin, dmWidgetExternalVideoPlugin, dmWidgetFeedReaderPlugin, dmWidgetGalleryPlugin, dmWidgetTwitterPlugin, doctrine2, Doctrine2-Sluggable-Functional-Behavior, DoctrineDataCollectorWithQueryList, DoctrineExtensions, DoctrineMongoDBBundle, dotfiles, dotfiles-1, draggabilly, dropship, eco, eev, Elastica, elasticsearch.github.com, engine-evaluator, fingerprintjs2, fishnet, FOQTyperBundle, FOSFacebookBundle, FOSUserBundle, ftp_backup, functional-php, furet, fzf.vim, games, GaufretteBundle, getIPIntel, gist-vim, git-achievements, git-pulls, GithubBundle, gitv, glue, Goutte, gulp, hackathon-starter, hacksquare, Hasher, haskant, haskell-prismic, hello-sbt, HerzultForumBundle, hosts, howler.js, howlerjs.com, html-template-syntax, html5-boilerplate, html5-boilerplate-server-configs, http-pgn-split, i3pystatus, idbase, Imagine, ImagineBundle, indradb, infinite-scroll, interact.js, irwin, jackalope, java-kit, javascript-jquery-starter, javascript-kit, jdub, jdubext, jedis, jquery, jquery-powertip, jquery-textcomplete, jquery-ui, jsday-cycle-js, jwt-scala, Kamon, kamon-influxdb, kcacup, lantenora, learn_you_a_scalaz, lichess-crowdin, lichess-data, lichess-db, lichess-event-stream-watcher, lichess-game-migration, lichess-gmail, lichess-layout, lichess-mobile-apk, lichess-mongo-import, lichess-oauth-server, lichess-old, lichess-playing-alerts, lichess-puzzle-kit, lichess-puzzler, lichess-search-import, lichess-uci-bot, lichess.globe, LichessBot, lichessPDFExporter, lichessPuzzlesV1toV2, lichobile, lichomail, lichs, ligamedl, lila, lila-fishnet, lila-jmh-benchmarks, lila-maven, lila-openingexplorer, lila-search, lila-ws, liquidctl, listen-to-chess, ltc, lusty, macrocosm, mail-plugin, MartIrc, maven, maxmind-geoip2-scala, MediaExposer, MediaManagerBundle, migrations, mithril.js, mixit-lichess, moment, mongo-hacker, mongobits, mongodb, mongodb-odm, mongodb-odm-documentation, mongoPHP, mongotopy, mousetrap, multiple-select, munin-lichess, muteZatShit, muteZatShit-old, nailgun, nerdcommenter, nestor, netty, netty-reactive-streams, netty-scala-http, nvim-config, oh-my-zsh, onedark.vim, onestlatech.github.io, OpenAPI-Specification, OpeningsTrainer, openingtree, optional, orm-documentation, ornicar.github.com, OrnicarAkismetBundle, OrnicarInsaneMarkdownBundle, OrnicarMessageBundle, Pagerfanta, passport-lichess, patchwork-builder, pgn-recorder, pgn4web, pgnspectator, pgnstudyrelay, php-git-repo, php-github-api, php-html-writer, php-kit, php-user-agent, phptwitterbot, piraspbay, play-autoconfig, play-cdi-leak, play-plugins, Play-ReactiveMongo, play-run-mem, play-samples, play-scala-websocket-example, play-ws, play2-blog-jousse, play20-auth, playframework-lila, plugins, praxeum, Probable-Wordlists, problem-creator, Project_Abitbol, python-lichess, pyzik, ranger, ReactiveMongo, ReactiveMongo-BSON, reactivemongo-site, ReactiveMongo-Streaming, reddit-pgn-to-gif, ReDoc, RelayChess, repos, rust-pgn-reader, rusted-cypher, s2test, salat, sbinary, sbt-bintray, sbt-dependency-graph, sbt-man, sbt-onejar, sbt-quickfix, sbt-scalabuff, scala-aichallenge, scala-csv, scala-elasticsearch, scala-kit, scala-netty, scala-paginator, scala-uri, ScalaBuff, scalachess, scalalib, scalariform, scalariver, scalascrabble, scalastic, scalatags, scalatra, scalaz, scalex, scalex-http, scalex-sbt, scalex-web, scrimage, sedis, sf2minimal, sf2playground, sizzle, sl-patched, sltc, snabbdom, snap-website, snipmate-snippets, snipmate.vim, solarized, specs2, ssu, Stockfish, stockfish.js, stockfish.pexe, StofDoctrineExtensionsBundle, storage, strategic.international_on_github, stream-voice, streetfighter2-versus, supgit, swagger-ui, swiftmailer, swisssystem, symfony-docs, tensorflow_chessbot, test-prog-in-scala, TheCoreLite, TLP, tmux-mem-cpu-load, tmuxinator, todomvc, todomvc-cycle, tsp, TTYtter-PrettyTweets, twirl, typescript-starter-cycle, unite-tag, UserScripts, userstyles, vault, vim-airline, vim-airline-themes, vim-aldmeris, vim-bufexplorer, vim-colors-solarized, vim-debug, vim-dirdo, vim-mru, vim-php-debugger, vim-php-doc, vim-php-namespace, vim-ragtag, vim-scala, vim-surround, vim-unimpaired, vim-yankring, vimium, vimperator-plugins, vindinium, vindinium-starter-clojure, vindinium-starter-python, vindinium-starter-scala, vsimbot, vue-chessboard, vulug, WhiteOctoberPagerfantaBundle, wiredtiger, wmmatching, wolfie, worldchess-frontend, wwc, xsbt, xsbt-reflect, yesod, zen-catacomb, ZendPaginatorAdapter, Zengularity-Hackday.github.io, zf2, zsh-history-substring-searchsome errors were found:
+[ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/cats/contributors"
+  queryString          = "?page=13"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 896>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/chess.js/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1440>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/chessboardjs/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1956>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/chessground/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2440>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/chessground-examples/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1416>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/chessmap/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2044>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/hosts/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2196>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/howler.js/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 600>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/howlerjs.com/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1668>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/html5-boilerplate/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2976>: failed (Connection timed out (WSAETIMEDOUT)))),DecodeFailure "not enough input" (Response {responseStatusCode = Status {statusCode = 204, statusMessage = "No Content"}, responseHeaders = fromList [("Date","Thu, 28 Jan 2021 16:51:45 GMT"),("Server","GitHub.com"),("Status","204 No Content"),("X-OAuth-Scopes","admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete:packages, delete_repo, gist, notifications, repo, user, workflow, write:discussion, write:packages"),("X-Accepted-OAuth-Scopes",""),("X-GitHub-Media-Type","github.v3"),("X-RateLimit-Limit","5000"),("X-RateLimit-Remaining","522"),("X-RateLimit-Reset","1611853971"),("x-ratelimit-used","4478"),("Access-Control-Expose-Headers","ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset"),("Access-Control-Allow-Origin","*"),("Strict-Transport-Security","max-age=31536000; includeSubdomains; preload"),("X-Frame-Options","deny"),("X-Content-Type-Options","nosniff"),("X-XSS-Protection","1; mode=block"),("Referrer-Policy","origin-when-cross-origin, strict-origin-when-cross-origin"),("Content-Security-Policy","default-src 'none'"),("Vary","Accept-Encoding, Accept, X-Requested-With"),("Vary","Accept-Encoding"),("X-GitHub-Request-Id","3E69:21FA:57069AE:5F6F8BC:6012EBA1")], responseHttpVersion = HTTP/1.1, responseBody = ""}),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/ReactiveMongo-BSON/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 704>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/ornicar/reactivemongo-site/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1540>: failed (Connection timed out (WSAETIMEDOUT))))]calculating highest contributor in ornicar's reposthe highest contributor in ornicar's repos is RepoContributor {login = "ornicar", contributions = 36100}executing `neimhin'sFunc` for RepoContributor {login = "ornicar", contributions = 36100}trying to get ornicar's repos1

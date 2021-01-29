@@ -55,6 +55,9 @@ data GitHubRepo =
              , language :: Maybe Text
              } deriving (Generic, FromJSON, Show)
 
+getName :: GitHubRepo -> Text
+getName (GitHubRepo n _ _) = n
+
 data RepoContributor =
   RepoContributor { login :: Text
                   , contributions :: Integer
