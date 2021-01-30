@@ -9,7 +9,7 @@ import Control.Concurrent
 
 main :: IO ()
 main = do
-  threadId <- mapM forkIO (map getChainAndSaveToFile ["neimhin","fabpot", "andrew", "taylorotwell", "egoist", "HugoGiraudel", "ornicar", "bebraw","nelsonic"])
+  threadIds <- mapM forkIO (map getChainAndSaveToFile ["neimhin","fabpot", "andrew", "taylorotwell", "egoist", "HugoGiraudel", "ornicar", "bebraw","nelsonic"])
   return ()
   --let links = (foldl (++) [] linkss)
   --let nodes = generateNodes links

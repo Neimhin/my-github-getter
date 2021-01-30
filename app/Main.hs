@@ -5,8 +5,6 @@ import System.Environment
 import Data.Aeson
 import Control.Concurrent
 
-
-
 main :: IO ()
 main = do
   threadIds <- mapM forkIO (map getChainAndSaveToFile ["neimhin","fabpot", "andrew", "taylorotwell", "egoist", "HugoGiraudel", "ornicar", "bebraw","nelsonic"])
