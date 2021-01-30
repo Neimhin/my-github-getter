@@ -12,8 +12,9 @@ import           Servant.API                (BasicAuthData (..))
 main :: IO ()
 main = do
     linkss <- sequence (map getChainAndSaveToFile ["neimhin","fabpot", "andrew", "taylorotwell", "egoist", "HugoGiraudel", "ornicar", "bebraw","nelsonic"])
-    let nodes = map generateNodes linkss
-    encodeFile ("alltogether.json" :: FilePath) (Graph (foldl (++) [] nodes) (foldl (++) [] linkss))
+    let links = (foldl (++) [] linkss)
+    let nodes = generateNodes links
+    encodeFile ("alltogether.json" :: FilePath) (Graph nodes links)
 
 getChainAndSaveToFile :: String -> IO [Link]
 getChainAndSaveToFile startingUsername = do

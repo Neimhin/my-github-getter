@@ -93,7 +93,8 @@ getChainOfHighestContributors :: Username -> IO [GH.RepoContributor]
 getChainOfHighestContributors username = do
     -- token and authentictaionName are imported from Token.hs (remember to make sure git is ignoring Token.hs)
     let auth = BasicAuthData Token.authenticationName Token.token
-    reversechain <- neimhin'sFunc [] username auth
+    -- the starting username is the first node in the chain but the number of contributions is set to 0
+    reversechain <- neimhin'sFunc [(GH.RepoContributor (pack username) 0)] username auth
     return (reverse reversechain)
 
 reachedLoop :: [GH.RepoContributor] -> Bool
