@@ -1,5 +1,5 @@
 module Token where
 import Data.ByteString.UTF8 (fromString)
 
-token = fromString "f5820c4db837c098765c8d41c77696567726096e"
+token = fromString "31bea9eb9ac449e43a5e635819a599a90b31f481"
 authenticationName = fromString "Neimhin"
