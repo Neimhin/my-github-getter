@@ -44,11 +44,8 @@ library
     , text
     , utf8-string
     , split
-<<<<<<< HEAD
     , hashmap
-=======
     , threads
->>>>>>> 925fa03086ff82ff0373b11f629da194c86f827b
   default-language: Haskell2010
 
 executable github-get-exe
