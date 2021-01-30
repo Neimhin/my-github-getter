@@ -106,7 +106,9 @@ reachedLoop' n ((GH.RepoContributor n' _):rs) | n == n' = True
 neimhin'sFunc :: [GH.RepoContributor] -> Username -> BasicAuthData -> IO [GH.RepoContributor]
 neimhin'sFunc chain username auth = do
   case (reachedLoop chain) of
-    True -> return chain 
+    True -> do
+      putStrLn ("chain found: " ++ show chain)
+      return chain 
     False -> do
       Lib.log $ "trying to get " ++ username ++ "'s repos"
       Lib.log "1"

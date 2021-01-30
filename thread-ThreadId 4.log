@@ -43,4 +43,215 @@ ConnectionError (HttpExceptionRequest Request {
   responseTimeout      = ResponseTimeoutDefault
   requestVersion       = HTTP/1.1
 }
- (ConnectionFailure Network.Socket.connect: <socket: 848>: failed (Connection timed out (WSAETIMEDOUT))))
+ (ConnectionFailure Network.Socket.connect: <socket: 848>: failed (Connection timed out (WSAETIMEDOUT))))trying to get neimhin's repos12neimhin's repos are: Audrey_Tang_bio, Catch2, Conlang_Game, github-slideshow, lca, lca-prolog, my-github-getter, Programming-Practice, stack, SymProg-assignment-2[ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/neimhin/Catch2/contributors"
+  queryString          = "?page=8"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6336>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/neimhin/stack/contributors"
+  queryString          = "?page=7"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 4688>: failed (Connection timed out (WSAETIMEDOUT))))]the highest contributor in neimhin's repos is RepoContributor {login = "Neimhin", contributions = 26}executing `neimhin'sFunc` for RepoContributor {login = "Neimhin", contributions = 26}trying to get Neimhin's repos12error getting list of repos for Neimhin:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/Neimhin/repos"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 600>: failed (Connection timed out (WSAETIMEDOUT))))trying to get neimhin's reposneimhin's repos are: Audrey_Tang_bio, Catch2, Conlang_Game, github-slideshow, lca, lca-prolog, my-github-getter, Programming-Practice, stack, SymProg-assignment-2[ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/neimhin/Catch2/contributors"
+  queryString          = "?page=8"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2496>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/neimhin/stack/contributors"
+  queryString          = "?page=8"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6488>: failed (Connection timed out (WSAETIMEDOUT))])))]the highest contributor in neimhin's repos is RepoContributor {login = "Neimhin", contributions = 26}executing `neimhin'sFunc` for RepoContributor {login = "Neimhin", contributions = 26}trying to get Neimhin's reposNeimhin's repos are: Audrey_Tang_bio, Catch2, Conlang_Game, github-slideshow, lca, lca-prolog, my-github-getter, Programming-Practice, stack, SymProg-assignment-2[ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/Neimhin/Audrey_Tang_bio/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 4036>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/Neimhin/Catch2/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 5032>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/Neimhin/Conlang_Game/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 4788>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/Neimhin/github-slideshow/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2900>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/Neimhin/lca/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 5604>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/Neimhin/lca-prolog/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2076>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/Neimhin/my-github-getter/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 3296>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/Neimhin/Programming-Practice/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1796>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/Neimhin/stack/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 4808>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/Neimhin/SymProg-assignment-2/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 5136>: failed (Connection timed out (WSAETIMEDOUT))))]no highest contributor found. terminating now

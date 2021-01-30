@@ -43,4 +43,1406 @@ ConnectionError (HttpExceptionRequest Request {
   responseTimeout      = ResponseTimeoutDefault
   requestVersion       = HTTP/1.1
 }
- (ConnectionFailure Network.Socket.connect: <socket: 852>: failed (Connection timed out (WSAETIMEDOUT))))
+ (ConnectionFailure Network.Socket.connect: <socket: 852>: failed (Connection timed out (WSAETIMEDOUT))))trying to get bebraw's repos12bebraw's repos are: adventofcode, antwar-demo, awesome-cooking, awesome-design-systems, awesome-jscodeshift, awesome-tailwindcss, bball, bebraw, blog-utils, blogger2ghost, blogger2ghost-server, bui, bunit.js, canifont, canvas-dataview-upload, cassopi, catalog, Chart.js.legend, check-markdown-links, code-of-conduct, colorjoe, colorjs, conference-data, conferences, create-react-app, cv, darklord-sequelize, DefinitelyTyped, deno-demos, deno_swc, diego-redux, django-navi, dotfiles, dragjs, effectserver-client, eslint-parser-fail, expense-frontend, extract-react-types, extract-text-warning, extract-text-webpack-plugin, f500-scraper, fs-demo, funkit, geekprofile-backend, geekprofile-frontend, generate-invoice, ghpages-demo, ghw, gql-query-builder, graph.js, graphql-apis, graphql.github.io, grunt-adapter, grunt-umd, gustwind, Harmony-Brushes, highlight-loader, html-webpack-remark-plugin, invoice-frontend, ioscript.js, iterplus, james-compile, jest-react-profiler, jest-require-actual-bug, jkl-scraper, jquery-ui-webpack-demo, jquery.caro, jquery.center.js, jquery.ellipsis, jquery.rest-client.js, jquery.tokko.js, js.org, jsassert, JSbooks, jsdelivr-in-5mins, jsopo, jsrunner, jswiki, juhoshomepage, juke, keywords-demo, lens-web, libtemplate.js, libumd, linaria, lint-staged, lte-scraper, markdown-doctest, meetups, mocss, modular-toolkit, mojs, most-active-github-users-counter, mrm, narrative.js, nixtu, node-configuration-patterns, open-source-sponsors, otion, parse-env, parsegh, pingdom-api, Placidity, png2ico, prism, project-defaults, props2query, pynu, pypandoc, pyqa, qdemo, react-bundle-2017, react-country-flag, react-crm-backend, react-crm-frontend, react-docgen-typescript, react-ellipsify, react-ghfork, react-hot-starter, react-over-scroll, react-pagify, react-pure-button, react-pure-menu, react-sidecar, react-swipeable-views, react-virtualized, reactabular, reactjs.org, readme2gh, really-brief-introduction-to-django, really-brief-introduction-to-html5, really-brief-introduction-to-javascript, really-brief-introduction-to-python, recipe-scraper, redirect-webpack-plugin, reimager, rekanban, reload.js, replace-project-meta, resolve-swagger-refs, rest-proxy, rjs-build-demo, sandboxy, schema2object, segmentize, setjs, speccer, spyder, stalbum, stalbum-starter, stitches, styled-system, styleguidist-ts-sc, stylesheet-helpers, suite.js, swagger-todo, swagger2client, swaggerify, swc, t1000, taskist, template_editor, tests-in-modules, tinytest, turtles.js, typed-html, web-conferences-2018, webpack-add-dependency-plugin, webpack-cookbook-redirects, webpack-defaults, webpack-dev-server, webpack-dev-server-bug, webpack-nano, webpack-plugin-serve, webpack-serve-crash, webpack-validator, webshotter, wps-watch-demo, yabox.js, yams, yayassg, yeswejekyll[ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/awesome-design-systems/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6344>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/awesome-tailwindcss/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6936>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/code-of-conduct/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6604>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/conference-data/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6332>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/conferences/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6296>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/create-react-app/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6404>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/DefinitelyTyped/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6632>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/extract-text-webpack-plugin/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6620>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/graphql-apis/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6900>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/graphql.github.io/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6828>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/highlight-loader/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2368>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/jquery.ellipsis/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6672>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/js.org/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6200>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/libumd/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6040>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/linaria/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6420>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/lint-staged/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6224>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/markdown-doctest/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6744>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/prism/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 5768>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/props2query/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6116>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/pypandoc/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 380>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/react-pure-button/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 4292>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/react-pure-menu/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6456>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/react-sidecar/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 3344>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/react-swipeable-views/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1116>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/react-virtualized/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1668>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/reactabular/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 5504>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/reactjs.org/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 5548>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/readme2gh/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6764>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/really-brief-introduction-to-django/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 4436>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/really-brief-introduction-to-html5/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 3608>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/really-brief-introduction-to-javascript/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6752>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/really-brief-introduction-to-python/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6700>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/styleguidist-ts-sc/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6748>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/stylesheet-helpers/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6684>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/suite.js/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 3408>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/swagger-todo/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 3680>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/swagger2client/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 3276>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/swaggerify/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6696>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/swc/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6680>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/turtles.js/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6740>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/typed-html/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6692>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/web-conferences-2018/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6676>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-add-dependency-plugin/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 552>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-cookbook-redirects/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6724>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-defaults/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 4428>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-dev-server/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6720>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-dev-server-bug/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2344>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-nano/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1516>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-plugin-serve/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6708>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-serve-crash/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6704>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-validator/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6488>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webshotter/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 3196>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/wps-watch-demo/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 4676>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/yabox.js/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 4692>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/yams/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2184>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/yayassg/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 4152>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/yeswejekyll/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1608>: failed (Connection timed out (WSAETIMEDOUT))])))]the highest contributor in bebraw's repos is RepoContributor {login = "herrstucki", contributions = 566}executing `neimhin'sFunc` for RepoContributor {login = "herrstucki", contributions = 566}trying to get herrstucki's repos12error getting list of repos for herrstucki:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/herrstucki/repos"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 3720>: failed (Connection timed out (WSAETIMEDOUT))))trying to get bebraw's reposbebraw's repos are: adventofcode, antwar-demo, awesome-cooking, awesome-design-systems, awesome-jscodeshift, awesome-tailwindcss, bball, bebraw, blog-utils, blogger2ghost, blogger2ghost-server, bui, bunit.js, canifont, canvas-dataview-upload, cassopi, catalog, Chart.js.legend, check-markdown-links, code-of-conduct, colorjoe, colorjs, conference-data, conferences, create-react-app, cv, darklord-sequelize, DefinitelyTyped, deno-demos, deno_swc, diego-redux, django-navi, dotfiles, dragjs, effectserver-client, eslint-parser-fail, expense-frontend, extract-react-types, extract-text-warning, extract-text-webpack-plugin, f500-scraper, fs-demo, funkit, geekprofile-backend, geekprofile-frontend, generate-invoice, ghpages-demo, ghw, gql-query-builder, graph.js, graphql-apis, graphql.github.io, grunt-adapter, grunt-umd, gustwind, Harmony-Brushes, highlight-loader, html-webpack-remark-plugin, invoice-frontend, ioscript.js, iterplus, james-compile, jest-react-profiler, jest-require-actual-bug, jkl-scraper, jquery-ui-webpack-demo, jquery.caro, jquery.center.js, jquery.ellipsis, jquery.rest-client.js, jquery.tokko.js, js.org, jsassert, JSbooks, jsdelivr-in-5mins, jsopo, jsrunner, jswiki, juhoshomepage, juke, keywords-demo, lens-web, libtemplate.js, libumd, linaria, lint-staged, lte-scraper, markdown-doctest, meetups, mocss, modular-toolkit, mojs, most-active-github-users-counter, mrm, narrative.js, nixtu, node-configuration-patterns, open-source-sponsors, otion, parse-env, parsegh, pingdom-api, Placidity, png2ico, prism, project-defaults, props2query, pynu, pypandoc, pyqa, qdemo, react-bundle-2017, react-country-flag, react-crm-backend, react-crm-frontend, react-docgen-typescript, react-ellipsify, react-ghfork, react-hot-starter, react-over-scroll, react-pagify, react-pure-button, react-pure-menu, react-sidecar, react-swipeable-views, react-virtualized, reactabular, reactjs.org, readme2gh, really-brief-introduction-to-django, really-brief-introduction-to-html5, really-brief-introduction-to-javascript, really-brief-introduction-to-python, recipe-scraper, redirect-webpack-plugin, reimager, rekanban, reload.js, replace-project-meta, resolve-swagger-refs, rest-proxy, rjs-build-demo, sandboxy, schema2object, segmentize, setjs, speccer, spyder, stalbum, stalbum-starter, stitches, styled-system, styleguidist-ts-sc, stylesheet-helpers, suite.js, swagger-todo, swagger2client, swaggerify, swc, t1000, taskist, template_editor, tests-in-modules, tinytest, turtles.js, typed-html, web-conferences-2018, webpack-add-dependency-plugin, webpack-cookbook-redirects, webpack-defaults, webpack-dev-server, webpack-dev-server-bug, webpack-nano, webpack-plugin-serve, webpack-serve-crash, webpack-validator, webshotter, wps-watch-demo, yabox.js, yams, yayassg, yeswejekyll[ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/awesome-design-systems/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1096>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/awesome-tailwindcss/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 5564>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/code-of-conduct/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6336>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/conference-data/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 5412>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/conferences/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6456>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/create-react-app/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6560>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/DefinitelyTyped/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6332>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/extract-text-webpack-plugin/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6292>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/graphql-apis/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2344>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/graphql.github.io/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2200>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/js.org/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 1720>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/juhoshomepage/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2020>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/juke/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 928>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/linaria/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1924>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/lint-staged/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2592>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/markdown-doctest/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2884>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/modular-toolkit/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6556>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/mojs/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 3988>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/narrative.js/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2472>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/prism/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 5620>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/project-defaults/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 756>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/props2query/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6500>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/pynu/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6492>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/pypandoc/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 5416>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/react-ghfork/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 4984>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/react-swipeable-views/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 3296>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/react-virtualized/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 3256>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/reactjs.org/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 4800>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/really-brief-introduction-to-html5/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 5476>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/really-brief-introduction-to-javascript/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2764>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/recipe-scraper/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2532>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/stalbum-starter/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 4048>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/swagger2client/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 2772>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/swc/contributors"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2700>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/tests-in-modules/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 4052>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/turtles.js/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1936>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-add-dependency-plugin/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1540>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-cookbook-redirects/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 1760>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/webpack-dev-server/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 3160>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/wps-watch-demo/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6236>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/bebraw/yams/contributors"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6424>: failed (Connection timed out (WSAETIMEDOUT))])))]the highest contributor in bebraw's repos is RepoContributor {login = "herrstucki", contributions = 566}executing `neimhin'sFunc` for RepoContributor {login = "herrstucki", contributions = 566}trying to get herrstucki's reposerror getting list of repos for herrstucki:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/herrstucki/repos"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 5412>: failed (Connection timed out (WSAETIMEDOUT))))

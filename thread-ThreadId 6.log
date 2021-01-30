@@ -43,4 +43,34 @@ ConnectionError (HttpExceptionRequest Request {
   responseTimeout      = ResponseTimeoutDefault
   requestVersion       = HTTP/1.1
 }
- (ConnectionFailure Network.Socket.connect: <socket: 928>: failed (Connection timed out (WSAETIMEDOUT))))
+ (ConnectionFailure Network.Socket.connect: <socket: 928>: failed (Connection timed out (WSAETIMEDOUT))))trying to get andrew's repos12error getting list of repos for andrew:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/andrew/repos"
+  queryString          = "?page=8"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6260>: failed (Connection timed out (WSAETIMEDOUT))))trying to get andrew's reposerror getting list of repos for andrew:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/andrew/repos"
+  queryString          = "?page=8"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 976>: failed (Connection timed out (WSAETIMEDOUT))])))
