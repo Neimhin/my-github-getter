@@ -1,0 +1,132 @@
+trying to get taylorotwell's repos12error getting list of repos for taylorotwell:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/taylorotwell/repos"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 900>: failed (Connection timed out (WSAETIMEDOUT))))trying to get taylorotwell's repos12error getting list of repos for taylorotwell:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/taylorotwell/repos"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 860>: failed (Connection timed out (WSAETIMEDOUT))))trying to get taylorotwell's repos12error getting list of repos for taylorotwell:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/taylorotwell/repos"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 760>: failed (Connection timed out (WSAETIMEDOUT))))trying to get taylorotwell's repos12taylorotwell's repos are: bugsnag-laravel, closure, collision, docs, docsearch-configs, Fastcgi, laravel-cors, livewire, nexmo-horizon-demo, once, Packages, php-pm, sequel-pro, symfony, TrustedProxy, website, zttp[ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/taylorotwell/docsearch-configs/contributors"
+  queryString          = "?page=7"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 6284>: failed (Connection timed out (WSAETIMEDOUT)))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/taylorotwell/symfony/contributors"
+  queryString          = "?page=5"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 2716>: failed (Connection timed out (WSAETIMEDOUT))))]the highest contributor in taylorotwell's repos is RepoContributor {login = "wbond", contributions = 870}executing `neimhin'sFunc` for RepoContributor {login = "wbond", contributions = 870}trying to get wbond's repos12error getting list of repos for wbond:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/wbond/repos"
+  queryString          = "?page=2"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 4928>: failed (Connection timed out (WSAETIMEDOUT))))trying to get taylorotwell's repostaylorotwell's repos are: bugsnag-laravel, closure, collision, docs, docsearch-configs, Fastcgi, laravel-cors, livewire, nexmo-horizon-demo, once, Packages, php-pm, sequel-pro, symfony, TrustedProxy, website, zttp[ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/taylorotwell/docsearch-configs/contributors"
+  queryString          = "?page=8"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 4652>: failed (Connection timed out (WSAETIMEDOUT))]))),ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/repos/taylorotwell/symfony/contributors"
+  queryString          = "?page=8"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (InternalException (HostCannotConnect "api.github.com" [Network.Socket.connect: <socket: 6536>: failed (Connection timed out (WSAETIMEDOUT))])))]the highest contributor in taylorotwell's repos is RepoContributor {login = "wbond", contributions = 870}executing `neimhin'sFunc` for RepoContributor {login = "wbond", contributions = 870}trying to get wbond's reposerror getting list of repos for wbond:
+ConnectionError (HttpExceptionRequest Request {
+  host                 = "api.github.com"
+  port                 = 80
+  secure               = False
+  requestHeaders       = [("Accept","application/json;charset=utf-8,application/json"),("user-agent","haskell-app"),("Authorization","<REDACTED>")]
+  path                 = "/users/wbond/repos"
+  queryString          = "?page=1"
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 4812>: failed (Connection timed out (WSAETIMEDOUT))))
