@@ -9,3 +9,7 @@ Lib.hs~
 .Lib.hs.un
 Lib.hs~
 */*Token.hs*
+src/Token.hs
+src/.Token.hs.swp
+src/Token.hs~
+
