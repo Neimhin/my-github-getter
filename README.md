@@ -1,6 +1,9 @@
 # GitHub API app
 ![Force directed visualization of a graph of chains of highest committers](graph.png)
 
+Neimhin Robinson Gunning
+Student Number: 16321701
+
 The idea for this app was to crawl through github users and for a given user get all their repos and then find the user who had the highest number of commits in that set of repos and then recurse for that user, thus producing a chain of highest committers for a given user.
 Note that eventually one reaches a user who is the highest committer in their own set of repos and thus the crawl terminates.
 
