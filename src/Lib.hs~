@@ -84,6 +84,7 @@ generateLinks' found (next@(GH.RepoContributor source source_value):[]) chain = 
       lastTarget s@(GH.RepoContributor n v) [] =  (n, v)
       lastTarget s@(GH.RepoContributor n v) ((GH.RepoContributor n' v'):cs) | n == n' = (n, v)
                                                                             | otherwise = lastTarget s cs
+
 generateLinks' found ((GH.RepoContributor source source_value):b@(GH.RepoContributor target target_value):xs) chain =
   generateLinks' ((Link source target source_value target_value):found) (b:xs) chain
 
@@ -111,9 +112,7 @@ neimhin'sFunc chain username auth = do
       return chain 
     False -> do
       Lib.log $ "trying to get " ++ username ++ "'s repos"
-      Lib.log "1"
       userRepos <- (getRepos auth (pack username))
-      Lib.log "2"
       case userRepos of
         Left err -> do Lib.log $ "error getting list of repos for " ++ username ++ ":\n" ++ (show err)
                        return chain
