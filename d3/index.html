@@ -19,7 +19,7 @@ text {
 }
 
 </style>
-<svg width="960" height="600"></svg>
+<svg width="2000" height="2000"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -51,7 +51,8 @@ d3.json("alltogether.json", function(error, graph) {
     .enter().append("g")
     
   var circles = node.append("circle")
-      .attr("r", function(d){ return Math.cbrt((3.0/(Math.PI*4.0))*(d.value));})
+      .attr("r", function(d){ if (d.value == 0) return(2);
+                              return Math.cbrt((3.0/(Math.PI*4.0))*(d.value));})
       .attr("fill", function(d) { return color(d.value); })
       .call(d3.drag()
           .on("start", dragstarted)

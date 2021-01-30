@@ -51,7 +51,8 @@ d3.json("alltogether.json", function(error, graph) {
     .enter().append("g")
     
   var circles = node.append("circle")
-      .attr("r", function(d){ return Math.pow((3.0/(Math.PI*4.0))*(d.value), -3);})
+      .attr("r", function(d){ if (d.value == 0) return(2);
+                              return Math.cbrt((3.0/(Math.PI*4.0))*(d.value));})
       .attr("fill", function(d) { return color(d.value); })
       .call(d3.drag()
           .on("start", dragstarted)
